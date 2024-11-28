@@ -1,31 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takamul Education Plateform</title>
     <style type="text/css">
         /* Header */
+        div#bootstrap-touch-slider {
+            display: none;
+        }
+
+        .main-content {
+            position: relative;
+            left: calc(-50vw + 50%);
+            width: 100vw;
+        }
+
+        .rs-banner.style7 {
+            background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625291-6208839686745c38b0b793!banner-bg.jpg?1732796692);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 870px;
+        }
+
+        .rs-banner.style7 .banner-content {
+            position: relative;
+            padding: 200px 0;
+        }
+
+        .rs-banner.style7 .banner-content .banner-title {
+            font-size: 70px;
+            line-height: 80px;
+            font-weight: 800;
+        }
+
+        .mb-50 {
+            margin-bottom: 50px;
+        }
+
+        .rs-banner.style7 .icons.one {
+            top: 136px;
+            right: 50px;
+        }
+
+        .rs-banner.style7 .icons {
+            position: absolute;
+        }
+
+        .rs-banner.style7 .icons.two {
+            left: 50%;
+            bottom: 100px;
+        }
+
+        .rs-banner.style7 .icons {
+            position: absolute;
+        }
+
+        .left-right {
+            animation: left-right 5s cubic-bezier(0.41, 0.04, 0.03, 1.1) infinite;
+        }
+
+        @keyframes left-right {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(50px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .rs-banner.style7 .icons.three {
+            top: 95px;
+            left: -160px;
+        }
+
+        .rs-banner.style7 .icons {
+            position: absolute;
+        }
+
+        .rs-banner.style7 .icons.four {
+            bottom: 210px;
+            left: -62px;
+        }
+
+        .rs-banner.style7 .icons {
+            position: absolute;
+        }
+
+        .up-down {
+            animation: up-down 4s alternate infinite;
+        }
+
+        @keyframes up-down {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(50px);
+            }
+        }
+
+        .rs-banner.style7 .img-part {
+            position: absolute;
+            right: 0;
+            bottom: 88px;
+        }
+
+        /* Services */
         .rs-services.style7 .services-item .content-part .title a {
             color: #ffffff;
         }
-    
+
         .rs-services.style7 .services-item .content-part .title a:hover {
             color: #21a7d0;
             transition: all 0.3s ease;
         }
-    
+
         .pt-100 {
             padding-top: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-    
+
         .rs-services.style7 .services-item {
             position: relative;
         }
-    
+
         .rs-services.style7 .services-item .content-part {
             position: absolute;
             top: 0;
@@ -34,17 +143,17 @@
             border-radius: 4px;
             transition: all 0.3s ease;
         }
-    
+
         .rs-services.style7 .services-item:hover .content-part {
             top: -10px;
         }
-    
+
         .rs-services.style7 .services-item .content-part .title {
             font-size: 22px;
             line-height: 32px;
             margin-bottom: 20px;
         }
-    
+
         .rs-services.style7 .services-item .content-part .desc {
             font-size: 16px;
             line-height: 26px;
@@ -52,7 +161,7 @@
             color: #ffffff;
             margin: 0;
         }
-    
+
         /* About */
         .sec-title2 .sub-title {
             font-size: 18px;
@@ -62,52 +171,52 @@
             text-transform: uppercase;
             margin-bottom: 10px;
         }
-    
+
         .sec-title2 .title {
             font-size: 42px;
             line-height: 52px;
             font-weight: 800;
             color: #031a3d;
         }
-    
+
         .mb-16 {
             margin-bottom: 16px;
         }
-    
+
         .mb-30 {
             margin-bottom: 30px;
         }
-    
+
         .pt-30 {
             padding-top: 30px;
         }
-    
+
         .mb-40 {
             margin-bottom: 40px;
         }
-    
+
         .mb-25 {
             margin-bottom: 25px;
         }
-    
+
         .pl-50 {
             padding-left: 50px;
         }
-    
+
         .pb-100 {
             padding-bottom: 100px;
         }
-    
+
         p {
             margin: 0 0 26px;
             line-height: 1.8;
         }
-    
+
         img {
             max-width: 100%;
             height: auto;
         }
-    
+
         .readon {
             outline: none;
             padding: 12px 40px;
@@ -121,46 +230,46 @@
             color: #111111;
             background: #f3f8f9;
         }
-    
+
         .uppercase {
             text-transform: uppercase !important;
         }
-    
+
         .readon.banner-style {
             color: #ffffff;
             background: #21a7d0;
             padding: 16px 58px;
         }
-    
+
         .readon.banner-style:hover {
             background: #1e95ba;
         }
-    
+
         .img-part {
             perspective: 800px;
         }
-    
+
         .img-part img {
             transition: transform 0.1s ease-out;
             will-change: transform;
         }
-    
+
         /* cta */
         .rs-cta {
             position: relative;
         }
-    
+
         .rs-cta.style7 {
             position: relative;
             left: calc(-50vw + 50%);
             width: 100vw;
         }
-    
+
         .rs-cta.style7 .partition-bg-wrap {
             background: none !important;
             position: relative;
         }
-    
+
         .rs-cta.style7 .partition-bg-wrap:after,
         .rs-cta.style7 .partition-bg-wrap:before {
             position: absolute;
@@ -170,7 +279,7 @@
             bottom: 0;
             z-index: -1;
         }
-    
+
         .rs-cta.style7 .partition-bg-wrap:before {
             background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1732649932-1815762135674623cc71de7!2.png?1732649932);
             background-size: cover;
@@ -178,36 +287,36 @@
             background-position: center;
             right: 0;
         }
-    
+
         .rs-cta.style7 .partition-bg-wrap:after {
             background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1732649926-340500917674623c6505b9!1.png?1732649932);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
-    
+
         .sec-title2 .title.white-color {
             color: #ffffff;
         }
-    
+
         .white-color {
-            color: #ffffff;
+            color: #ffffff !important;
         }
-    
+
         .readon.border-less {
             border: none;
         }
-    
+
         .readon.border-less:hover {
             background: rgba(243, 248, 239, 0.8);
             color: #111111;
         }
-    
+
         /* facilities  */
         .rs-facilities .img-part {
             position: relative;
         }
-    
+
         .choose-part {
             max-width: 700px;
             position: absolute;
@@ -218,17 +327,17 @@
             padding: 80px 40px;
             background: #e7f8fb;
         }
-    
+
         .rs-facilities .img-part .media-icon {
             position: absolute;
             left: 80px;
             top: 90px;
         }
-    
+
         .rs-facilities .choose-part .our-facilities .icon-part img {
             max-width: 55px;
         }
-    
+
         .media-icon .popup-videos {
             position: absolute;
             top: 50%;
@@ -241,7 +350,7 @@
             border-radius: 100%;
             text-align: center;
         }
-    
+
         .media-icon .popup-videos:before {
             content: "";
             position: absolute;
@@ -257,16 +366,16 @@
             transition: all 0.3s ease;
             z-index: -1;
         }
-    
+
         .media-icon .popup-videos i:before {
             font-size: 30px;
             line-height: 70px;
         }
-    
+
         .rs-facilities .choose-part .our-facilities .content-part .text-part {
             padding-left: 30px;
         }
-    
+
         .rs-facilities .choose-part .our-facilities .content-part .text-part .title {
             font-size: 24px;
             line-height: 22px;
@@ -275,7 +384,7 @@
             margin: 0;
             padding-bottom: 10px;
         }
-    
+
         .rs-facilities .choose-part .our-facilities .content-part .text-part .desc {
             font-size: 16px;
             line-height: 26px;
@@ -283,12 +392,12 @@
             color: #54647b;
             margin: 0;
         }
-    
+
         .rs-facilities .choose-part .our-facilities {
             display: flex;
             align-items: center;
         }
-    
+
         /* counter */
         .rs-counter .counter-item .rs-count {
             position: relative;
@@ -299,27 +408,27 @@
             padding-right: 25px;
             margin-bottom: 15px;
         }
-    
+
         .rs-counter.style7 .counter-item .title {
             color: #54647b;
         }
-    
+
         .rs-counter.style7 .counter-item .rs-count.purple-color {
             color: #c701f1;
         }
-    
+
         .rs-counter.style7 .counter-item .rs-count.blue-color {
             color: #065ce8;
         }
-    
+
         .rs-counter.style7 .counter-item .rs-count.pink-color {
             color: #f6075b;
         }
-    
+
         .rs-counter.style7 .counter-item .rs-count.orange-color {
             color: #ffbc00;
         }
-    
+
         /* Staff Team */
         .staffTeam {
             padding: 60px 15px;
@@ -328,7 +437,7 @@
             left: calc(-50vw + 50%);
             width: 100vw;
         }
-    
+
         .sub-title {
             font-size: 18px;
             line-height: 28px;
@@ -337,20 +446,20 @@
             text-transform: uppercase;
             margin-bottom: 10px;
         }
-    
+
         .title {
             line-height: 52px;
             font-weight: 800;
             color: #031a3d;
         }
-    
+
         .staffteamimg {
             position: relative;
             overflow: hidden;
             display: block;
             border-radius: 0%;
         }
-    
+
         .staffteam .staffteamimg img {
             margin-left: 10px;
             position: relative;
@@ -358,7 +467,7 @@
             object-fit: cover;
             aspect-ratio: 2 / 2;
         }
-    
+
         .staff-content {
             position: absolute;
             bottom: 50%;
@@ -375,20 +484,20 @@
             justify-content: center;
             align-items: center;
         }
-    
+
         .staffteamimg:hover .staff-content {
             opacity: 1;
             transform: translate(-50%, 50%);
         }
-    
+
         .staffteam .staffteamimg:before {
             display: none;
         }
-    
+
         .staffteam ul {
             display: block;
         }
-    
+
         .social-links li {
             position: relative;
             background: none repeat scroll 0 0;
@@ -402,410 +511,691 @@
             transition: .3s;
             box-shadow: none;
         }
-    
+
         .social-links li a i {
             line-height: 36px;
             font-size: 18px;
             color: white;
         }
-    
+
         .staff-content h3,
         .staff-content span.post {
             color: white !important;
         }
-    
+
         .staff-content h3:hover {
             color: black !important;
             cursor: pointer;
         }
-    
+
         .staffteam:hover .staffteamimg img {
             transform: scale(1);
             /* transition: all 500ms ease; */
         }
-    
+
         .social-links li a i:hover {
             color: black;
         }
-    
+
         .social-links li a:hover {
             background: none;
         }
+
+        /* Partner */
+        .rs-partner .partner-item a img {
+            max-width: 163px;
+            margin: 0 auto;
+        }
+
+        /* NewsLetter */
+        .bg5 {
+            background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1732799708-39868948167486cdc970c5!bg.png?1732799709);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 5px;
+        }
+
+        .rs-newsletter.style6 .newsletter-wrap .content-part .title {
+            font-size: 42px;
+            line-height: 46px;
+            font-weight: 600;
+            color: #031a3d;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .rs-newsletter.style6 .newsletter-wrap .content-part .sub-title {
+            font-weight: 400;
+            line-height: 30px;
+            font-size: 20px;
+            color: #54647b;
+        }
+
+        .rs-newsletter.style6 .newsletter-wrap .newsletter-form {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 600px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .rs-newsletter.style6 .newsletter-wrap .newsletter-form #email {
+            width: 100%;
+        }
+
+        .rs-newsletter.style6 .newsletter-wrap .newsletter-form input {
+            background: #ffffff;
+            color: #505050;
+            padding: 18px 40px;
+            padding-right: 150px;
+        }
+
+        .rs-newsletter.style6 .newsletter-wrap .newsletter-form input,
+        .rs-newsletter.style6 .newsletter-wrap .newsletter-form button {
+            outline: none;
+            border: none;
+        }
+
+        .rs-newsletter.modify .newsletter-wrap .newsletter-form button {
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            background: #21a7d0;
+            color: #ffffff;
+            padding: 14px 38px;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+
+        /* Reviews */
+        .testimonial_bg {
+            background: #e7f8fb !important;
+        }
+
+        .testimonial {
+            background: #ffffff !important;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) !important;
+            border-radius: 10px;
+        }
+
+        .testi_description h4 {
+            color: black;
+        }
+
+        .testi_description h5 {
+            color: #555555;
+        }
+
+        .testi_description p {
+            font-size: 17px;
+            font-style: italic;
+            color: grey;
+        }
+        /* Footer */
+        footer {
+            background: url(../images/2.jpg);
+            clear: both;
+            padding-top: 20px;
+            color: #BAC0C5;
+            z-index: 0;
+            position: relative;
+            left: calc(-50vw + 50%);
+            width: 100vw;
+        }
     </style>
 </head>
+
 <body>
-    <!-- Services Section Start -->
-<div class="rs-services style7 pt-100 md-pt-70">
-    <div class="container">
-        <div class="row" style="display: flex;justify-content:center;align-items: center;flex-wrap: wrap;">
-            <div class="col-lg-3 col-md-6 md-mb-30">
-                <div class="services-item">
+    <!-- Main content Start -->
+    <div class="main-content">
+        <!-- Banner Section Start -->
+        <div id="rs-banner" class="rs-banner style7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="banner-content">
+                            <h1 class="banner-title white-color">Develop a Passion For Learning</h1>
+                            <div class="desc white-color mb-50">
+                                Every act of conscious learning requires the willingness to suffer an injury
+                                to one’s self-esteem. That is why young children
+                            </div>
+                            <div class="btn-part">
+                                <a class="readon border-less" href="#">Get Started Now</a>
+                            </div>
+                        </div>
+                        <div class="icons one up-down">
+                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-15819810116745c3960b615!2.png?1732796692"
+                                alt="Images">
+                        </div>
+                        <div class="icons two left-right">
+                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-20384013816745c3960ad2c!1.png?1732796692"
+                                alt="Images">
+                        </div>
+                        <div class="icons three left-right">
+                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-20384013816745c3960ad2c!1.png?1732796692"
+                                alt="Images">
+                        </div>
+                        <div class="icons four up-down">
+                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-15819810116745c3960b615!2.png?1732796692"
+                                alt="Images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-part">
+                <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732798241-12560113096748672180882!banner-1.png?1732798263"
+                    alt="Images">
+            </div>
+        </div>
+        <!-- Banner Section End -->
+        <!-- Services Section Start -->
+        <div class="rs-services style7 pt-100 md-pt-70">
+            <div class="container">
+                <div class="row" style="display: flex;justify-content:center;align-items: center;flex-wrap: wrap;">
+                    <div class="col-lg-3 col-md-6 md-mb-30">
+                        <div class="services-item">
+                            <div class="img-part"><img alt="images"
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629832-8317560606745d548a1d0e!1.png?1732629833" />
+                            </div>
+
+                            <div class="content-part">
+                                <div class="icon-part mb-30 md-mb-15"><img alt="images"
+                                        src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629886-15252803846745d57e049c9!1.png?1732629886" />
+                                </div>
+
+                                <h4 class="title"><a href="#">Kindergarten</a></h4>
+
+                                <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius
+                                    .incididunt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 md-mb-30">
+                        <div class="services-item">
+                            <div class="img-part"><img alt="images"
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-2737733706745d600841b1!2.png?1732630017" />
+                            </div>
+
+                            <div class="content-part">
+                                <div class="icon-part mb-30 md-mb-15"><img alt="images"
+                                        src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-5375072506745d59def36b!2.png?1732629918" />
+                                </div>
+
+                                <h4 class="title"><a href="#">Primary School</a></h4>
+
+                                <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius
+                                    .incididunt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 md-mb-30">
+                        <div class="services-item">
+                            <div class="img-part"><img alt="images"
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-1598393936745d60085d90!3.png?1732630017" />
+                            </div>
+
+                            <div class="content-part">
+                                <div class="icon-part mb-30 md-mb-15"><img alt="images"
+                                        src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-5884132016745d59defffa!3.png?1732629918" />
+                                </div>
+
+                                <h4 class="title"><a href="#">High School</a></h4>
+
+                                <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius
+                                    .incididunt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="services-item">
+                            <div class="img-part"><img alt="images"
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-5028942966745d60087cd2!4.png?1732630017" />
+                            </div>
+
+                            <div class="content-part">
+                                <div class="icon-part mb-30 md-mb-15"><img alt="images"
+                                        src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-6115242796745d59df097b!4.png?1732629918" />
+                                </div>
+
+                                <h4 class="title"><a href="#">College/University</a></h4>
+
+                                <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius
+                                    .incididunt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Section End --><!-- About Section Start -->
+
+        <div class="rs-about style7 pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="row" style="display:flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                    <div class="col-lg-6 col-md-12 md-mb-30">
+                        <div class="img-part js-tilt"><img alt="images"
+                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732631529-14711997076745dbe924d05!about.png?1732631529" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 pl-50 md-pl-15 col-md-12">
+                        <div class="sec-title2">
+                            <div class="sub-title">About</div>
+
+                            <h2 class="title mb-30">Change is The End Result of All True Learning</h2>
+
+                            <p class="desc mb-25">Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius to
+                                mod
+                                tempor incididunt ut labore orem ipsum dolor sit amet, consectetur adipisic ing elit,
+                                sed eius
+                                to mod tempor incididunt ut labore incididunt. incididunt ut labore orem ipsum dolor</p>
+                        </div>
+
+                        <div class="btn-part"><a class="readon banner-style uppercase" href="#">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Section End --><!-- CTA Section Start -->
+
+        <div class="rs-cta style7">
+            <div class="partition-bg-wrap">
+                <div class="container">
+                    <div class="row pt-100 md-pt-70 pb-100 md-pb-70"
+                        style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                        <div class="col-lg-6 pl-62 md-pl-15 col-md-12 md-pb-70">
+                            <div class="sec-title2 mb-40">
+                                <h2 class="title white-color mb-16">Students Orientation 2020</h2>
+
+                                <div class="desc white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed eius
+                                    to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam.
+                                    Aenean
+                                    massa. Cum sociis natoque penatibus et magnis.</div>
+                            </div>
+
+                            <div class="btn-part"><a class="readon border-less" href="#">Apply Now</a></div>
+                        </div>
+
+                        <div class="col-lg-6 pl-62 md-pl-15 col-md-12 md-pt-70">
+                            <div class="sec-title2 mb-40">
+                                <h2 class="title white-color mb-16">Admission Open for 2020</h2>
+
+                                <div class="desc white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed eius
+                                    to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam.
+                                    Aenean
+                                    massa. Cum sociis natoque penatibus et magnis.</div>
+                            </div>
+
+                            <div class="btn-part"><a class="readon border-less" href="#">Apply Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CTA Section End --><!-- Facilities Section Start -->
+
+        <div class="rs-facilities pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="relative">
                     <div class="img-part"><img alt="images"
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629832-8317560606745d548a1d0e!1.png?1732629833" />
+                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651507-1114684522674629f3c9f30!bg-1.png?1732651508" />
+                        <div class="media-icon "><a class="popup-videos"
+                                href="https://www.youtube.com/watch?v=atMUy_bPoQI"><i class="fa fa-play"></i> </a></div>
                     </div>
 
-                    <div class="content-part">
-                        <div class="icon-part mb-30 md-mb-15"><img alt="images"
-                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629886-15252803846745d57e049c9!1.png?1732629886" />
+                    <div class="choose-part">
+                        <div class="sec-title2 md-mb-30">
+                            <div class="sub-title uppercase mb-10">Top Courses</div>
+
+                            <h2 class="title mb-0">Our Facilities</h2>
                         </div>
 
-                        <h4 class="title"><a href="#">Kindergarten</a></h4>
+                        <div class="our-facilities mb-15">
+                            <div class="icon-part"><img alt="images"
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-522866806674629ea1a1c1!1.png?1732651508" />
+                            </div>
 
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius .incididunt
-                        </p>
-                    </div>
-                </div>
-            </div>
+                            <div class="content-part pt-30 md-pt-0">
+                                <div class="text-part">
+                                    <h2 class="title">Global Certificate</h2>
 
-            <div class="col-lg-3 col-md-6 md-mb-30">
-                <div class="services-item">
-                    <div class="img-part"><img alt="images"
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-2737733706745d600841b1!2.png?1732630017" />
-                    </div>
-
-                    <div class="content-part">
-                        <div class="icon-part mb-30 md-mb-15"><img alt="images"
-                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-5375072506745d59def36b!2.png?1732629918" />
+                                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
+                                        sed eius to mod tempor incididunt.</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <h4 class="title"><a href="#">Primary School</a></h4>
+                        <div class="our-facilities mb-40">
+                            <div class="icon-part"><img alt="images"
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-647883945674629ea1b222!2.png?1732651508" />
+                            </div>
 
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius .incididunt
-                        </p>
-                    </div>
-                </div>
-            </div>
+                            <div class="content-part pt-30 md-pt-0">
+                                <div class="text-part">
+                                    <h2 class="title">Global Certificate</h2>
 
-            <div class="col-lg-3 col-md-6 md-mb-30">
-                <div class="services-item">
-                    <div class="img-part"><img alt="images"
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-1598393936745d60085d90!3.png?1732630017" />
-                    </div>
-
-                    <div class="content-part">
-                        <div class="icon-part mb-30 md-mb-15"><img alt="images"
-                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-5884132016745d59defffa!3.png?1732629918" />
+                                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
+                                        sed eius to mod tempor incididunt.</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <h4 class="title"><a href="#">High School</a></h4>
+                        <div class="our-facilities ">
+                            <div class="icon-part"><img alt="images"
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-5133652674629ea1d526!3.png?1732651508" />
+                            </div>
 
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius .incididunt
-                        </p>
-                    </div>
-                </div>
-            </div>
+                            <div class="content-part">
+                                <div class="text-part">
+                                    <h2 class="title">Global Certificate</h2>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="services-item">
-                    <div class="img-part"><img alt="images"
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-5028942966745d60087cd2!4.png?1732630017" />
-                    </div>
-
-                    <div class="content-part">
-                        <div class="icon-part mb-30 md-mb-15"><img alt="images"
-                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-6115242796745d59df097b!4.png?1732629918" />
-                        </div>
-
-                        <h4 class="title"><a href="#">College/University</a></h4>
-
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius .incididunt
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Services Section End --><!-- About Section Start -->
-
-<div class="rs-about style7 pt-100 pb-100 md-pt-70 md-pb-70">
-    <div class="container">
-        <div class="row" style="display:flex;justify-content: center;align-items: center;flex-wrap: wrap;">
-            <div class="col-lg-6 col-md-12 md-mb-30">
-                <div class="img-part js-tilt"><img alt="images"
-                        src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732631529-14711997076745dbe924d05!about.png?1732631529" />
-                </div>
-            </div>
-
-            <div class="col-lg-6 pl-50 md-pl-15 col-md-12">
-                <div class="sec-title2">
-                    <div class="sub-title">About</div>
-
-                    <h2 class="title mb-30">Change is The End Result of All True Learning</h2>
-
-                    <p class="desc mb-25">Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius to mod
-                        tempor incididunt ut labore orem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius
-                        to mod tempor incididunt ut labore incididunt. incididunt ut labore orem ipsum dolor</p>
-                </div>
-
-                <div class="btn-part"><a class="readon banner-style uppercase" href="#">Read More</a></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- About Section End --><!-- CTA Section Start -->
-
-<div class="rs-cta style7">
-    <div class="partition-bg-wrap">
-        <div class="container">
-            <div class="row pt-100 md-pt-70 pb-100 md-pb-70"
-                style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
-                <div class="col-lg-6 pl-62 md-pl-15 col-md-12 md-pb-70">
-                    <div class="sec-title2 mb-40">
-                        <h2 class="title white-color mb-16">Students Orientation 2020</h2>
-
-                        <div class="desc white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eius
-                            to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam. Aenean
-                            massa. Cum sociis natoque penatibus et magnis.</div>
-                    </div>
-
-                    <div class="btn-part"><a class="readon border-less" href="#">Apply Now</a></div>
-                </div>
-
-                <div class="col-lg-6 pl-62 md-pl-15 col-md-12 md-pt-70">
-                    <div class="sec-title2 mb-40">
-                        <h2 class="title white-color mb-16">Admission Open for 2020</h2>
-
-                        <div class="desc white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eius
-                            to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam. Aenean
-                            massa. Cum sociis natoque penatibus et magnis.</div>
-                    </div>
-
-                    <div class="btn-part"><a class="readon border-less" href="#">Apply Now</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- CTA Section End --><!-- Facilities Section Start -->
-
-<div class="rs-facilities pt-100 pb-100 md-pt-70 md-pb-70">
-    <div class="container">
-        <div class="relative">
-            <div class="img-part"><img alt="images"
-                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651507-1114684522674629f3c9f30!bg-1.png?1732651508" />
-                <div class="media-icon "><a class="popup-videos" href="https://www.youtube.com/watch?v=atMUy_bPoQI"><i
-                            class="fa fa-play"></i> </a></div>
-            </div>
-
-            <div class="choose-part">
-                <div class="sec-title2 md-mb-30">
-                    <div class="sub-title uppercase mb-10">Top Courses</div>
-
-                    <h2 class="title mb-0">Our Facilities</h2>
-                </div>
-
-                <div class="our-facilities mb-15">
-                    <div class="icon-part"><img alt="images"
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-522866806674629ea1a1c1!1.png?1732651508" />
-                    </div>
-
-                    <div class="content-part pt-30 md-pt-0">
-                        <div class="text-part">
-                            <h2 class="title">Global Certificate</h2>
-
-                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
-                                sed eius to mod tempor incididunt.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="our-facilities mb-40">
-                    <div class="icon-part"><img alt="images"
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-647883945674629ea1b222!2.png?1732651508" />
-                    </div>
-
-                    <div class="content-part pt-30 md-pt-0">
-                        <div class="text-part">
-                            <h2 class="title">Global Certificate</h2>
-
-                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
-                                sed eius to mod tempor incididunt.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="our-facilities ">
-                    <div class="icon-part"><img alt="images"
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-5133652674629ea1d526!3.png?1732651508" />
-                    </div>
-
-                    <div class="content-part">
-                        <div class="text-part">
-                            <h2 class="title">Global Certificate</h2>
-
-                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
-                                sed eius to mod tempor incididunt.</p>
+                                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
+                                        sed eius to mod tempor incididunt.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Facilities Section End --><!-- Counter Section Start -->
+        <!-- Facilities Section End -->
+        <!-- Counter Section Start -->
+        <div class="rs-counter style7 pb-100 md-pb-70">
+            <div class="container">
+                <div class="row couter-area">
+                    <div class="col-lg-3 col-md-6 md-mb-30">
+                        <div class="counter-item text-center">
+                            <h2 class="rs-count purple-color">2958</h2>
 
-<div class="rs-counter style7 pb-100 md-pb-70">
-    <div class="container">
-        <div class="row couter-area">
-            <div class="col-lg-3 col-md-6 md-mb-30">
-                <div class="counter-item text-center">
-                    <h2 class="rs-count purple-color">2958</h2>
-
-                    <h4 class="title mb-0">Finished Sessions</h4>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 md-mb-30">
-                <div class="counter-item text-center">
-                    <h2 class="rs-count plus blue-color">4523</h2>
-
-                    <h4 class="title mb-0">Enrolled Learners</h4>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 sm-mb-30">
-                <div class="counter-item text-center">
-                    <h2 class="rs-count plus pink-color">120</h2>
-
-                    <h4 class="title mb-0">Online Instructors</h4>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="counter-item text-center">
-                    <h2 class="rs-count percent orange-color">100%</h2>
-
-                    <h4 class="title mb-0">Satisfaction Rate</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Counter Section Start --><!-- Team Section Start -->
-
-<section class="staffTeam">
-    <div class="container">
-        <div class="sec-title2 text-center mb-50 md-mb-30">
-            <div class="sub-title primary">Instructor</div>
-
-            <h2 class="title mb-0">Expert Teachers</h2>
-
-            <div class="divider">&nbsp;</div>
-        </div>
-
-        <div class="teamstaff">
-            <div class="owl-carousel staff-carousel">
-                <div class="staffteam">
-                    <div class="staffteamimg"><img alt=""
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
-                        <div class="staff-content">
-                            <h3>Mrs.Ghada Aly</h3>
-                            <span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
-
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
+                            <h4 class="title mb-0">Finished Sessions</h4>
                         </div>
                     </div>
-                </div>
 
-                <div class="staffteam">
-                    <div class="staffteamimg"><img alt=""
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
-                        <div class="staff-content">
-                            <h3>Mrs.Ghada Aly</h3>
-                            <span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
+                    <div class="col-lg-3 col-md-6 md-mb-30">
+                        <div class="counter-item text-center">
+                            <h2 class="rs-count plus blue-color">4523</h2>
 
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
+                            <h4 class="title mb-0">Enrolled Learners</h4>
                         </div>
                     </div>
-                </div>
-                <div class="staffteam">
-                    <div class="staffteamimg"><img alt=""
-                            src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
-                        <div class="staff-content">
-                            <h3>Mrs.Ghada Aly</h3>
-                            <span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
 
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
+                    <div class="col-lg-3 col-md-6 sm-mb-30">
+                        <div class="counter-item text-center">
+                            <h2 class="rs-count plus pink-color">120</h2>
+
+                            <h4 class="title mb-0">Online Instructors</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="counter-item text-center">
+                            <h2 class="rs-count percent orange-color">100%</h2>
+
+                            <h4 class="title mb-0">Satisfaction Rate</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Team Section End -->
-<script>
-    const tiltElement = document.querySelector('.js-tilt');
+        <!-- Counter Section Start -->
+        <!-- Team Section Start -->
+        <section class="staffTeam">
+            <div class="container">
+                <div class="sec-title2 text-center mb-50 md-mb-30">
+                    <div class="sub-title primary">Instructor</div>
 
-    tiltElement.addEventListener('mousemove', (e) => {
-        const rect = tiltElement.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+                    <h2 class="title mb-0">Expert Teachers</h2>
 
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const rotateX = ((y - centerY) / centerY) * 15;
-        const rotateY = ((x - centerX) / centerX) * -15;
+                    <div class="divider">&nbsp;</div>
+                </div>
 
-        tiltElement.querySelector('img').style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    });
+                <div class="teamstaff">
+                    <div class="owl-carousel staff-carousel">
+                        <div class="staffteam">
+                            <div class="staffteamimg"><img alt=""
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
+                                <div class="staff-content">
+                                    <h3>Mrs.Ghada Aly</h3>
+                                    <span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-    tiltElement.addEventListener('mouseleave', () => {
-        tiltElement.querySelector('img').style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg)';
-    });
+                        <div class="staffteam">
+                            <div class="staffteamimg"><img alt=""
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
+                                <div class="staff-content">
+                                    <h3>Mrs.Ghada Aly</h3>
+                                    <span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
 
-    function animateCounter(element, start, end, duration) {
-        let startTime = null;
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staffteam">
+                            <div class="staffteamimg"><img alt=""
+                                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
+                                <div class="staff-content">
+                                    <h3>Mrs.Ghada Aly</h3>
+                                    <span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
 
-        const step = (currentTime) => {
-            if (!startTime) startTime = currentTime;
-            const progress = Math.min((currentTime - startTime) / duration, 1);
-            const currentValue = Math.floor(progress * (end - start) + start);
-            element.textContent = currentValue.toLocaleString();
-            if (progress < 1) {
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section End -->
+        <!-- Newsletter section start -->
+        <div class="rs-newsletter style6 modify bg5 pt-100 pb-100 md-pb-70 md-pt-70">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="newsletter-wrap">
+                            <div class="content-part md-mb-30">
+                                <h2 class="title mb-10 white-color">Subscribe To Our Newsletter!</h2>
+                                <div class="sub-title white-color">Subscribe Newsletter </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="newsletter-wrap">
+                            <form class="newsletter-form">
+                                <input type="email" id="email" name="email" placeholder="Enter Your Email" required="">
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter section end -->
+        <!-- Reviews  Start -->
+        <section class="spaceb40 spacet40 testimonial_bg fullwidth text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-md-offset-2 text-center">
+                        <div class="sub-title primary text-white">Student Reviews</div>
+
+                        <h2 class="title mb-0">What Our Students Say</h2>
+
+                        <div class="divider">&nbsp;</div>
+                    </div>
+                    <!--./col-md-8-->
+
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="testimonial">
+                                <div class="testimonialimg">
+                                    <img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+                                    <h4>Sidney W. Yarber</h4>
+                                    <h5>Manager</h5>
+                                </div>
+                                <div class="testi_description">
+                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
+                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                </div>
+                                <!--./testi_description-->
+                            </div>
+                            <!--./testimonial-->
+                        </div>
+                        <!--./col-md-12-->
+
+                        <div class="col-md-12 col-sm-12">
+                            <div class="testimonial">
+                                <div class="testimonialimg"><img
+                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img1.jpg" />
+                                </div>
+
+                                <div class="testi_description">
+                                    <h4>Kayla H. Seaman</h4>
+
+                                    <h5>Co &amp; Founder</h5>
+
+                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
+                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                </div>
+                                <!--./testi_description-->
+                            </div>
+                            <!--./testimonial-->
+                        </div>
+                        <!--./col-md-12-->
+
+                        <div class="col-md-12 col-sm-12">
+                            <div class="testimonial">
+                                <div class="testimonialimg"><img
+                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img4.jpg" />
+                                </div>
+
+                                <div class="testi_description">
+                                    <h4>Terence M. Witzel</h4>
+
+                                    <h5>Businessman</h5>
+
+                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
+                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                </div>
+                                <!--./testi_description-->
+                            </div>
+                            <!--./testimonial-->
+                        </div>
+                        <!--./col-md-12-->
+
+                        <div class="col-md-12 col-sm-12">
+                            <div class="testimonial">
+                                <div class="testimonialimg"><img
+                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img3.jpg" />
+                                </div>
+
+                                <div class="testi_description">
+                                    <h4>Williamson</h4>
+
+                                    <h5>Manager</h5>
+
+                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
+                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                </div>
+                                <!--./testi_description-->
+                            </div>
+                            <!--./testimonial-->
+                        </div>
+                        <!--./col-md-12-->
+                    </div>
+                    <!--./testimonial-carousel-->
+                </div>
+                <!--./row-->
+            </div>
+            <!--./container-->
+        </section>
+
+        <!-- Reviews End -->
+        <script>
+            const tiltElement = document.querySelector('.js-tilt');
+
+            tiltElement.addEventListener('mousemove', (e) => {
+                const rect = tiltElement.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * 15;
+                const rotateY = ((x - centerX) / centerX) * -15;
+
+                tiltElement.querySelector('img').style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            tiltElement.addEventListener('mouseleave', () => {
+                tiltElement.querySelector('img').style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg)';
+            });
+
+            function animateCounter(element, start, end, duration) {
+                let startTime = null;
+
+                const step = (currentTime) => {
+                    if (!startTime) startTime = currentTime;
+                    const progress = Math.min((currentTime - startTime) / duration, 1);
+                    const currentValue = Math.floor(progress * (end - start) + start);
+                    element.textContent = currentValue.toLocaleString();
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    }
+                };
+
                 requestAnimationFrame(step);
             }
-        };
 
-        requestAnimationFrame(step);
-    }
-
-    function startCounters() {
-        const counters = document.querySelectorAll('.rs-count');
-        counters.forEach((counter) => {
-            const endValue = parseInt(counter.textContent.replace(/,/g, ''), 10);
-            animateCounter(counter, 0, endValue, 2000);
-        });
-    }
-
-
-    const counterSection = document.querySelector('.rs-counter');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                startCounters();
+            function startCounters() {
+                const counters = document.querySelectorAll('.rs-count');
+                counters.forEach((counter) => {
+                    const endValue = parseInt(counter.textContent.replace(/,/g, ''), 10);
+                    animateCounter(counter, 0, endValue, 2000);
+                });
             }
-        });
-    }, { threshold: 0.5 });
 
-    observer.observe(counterSection);
-</script>
+
+            const counterSection = document.querySelector('.rs-counter');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        startCounters();
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(counterSection);
+        </script>
 </body>
-</html>
 
+</html>
