@@ -410,6 +410,7 @@
         }
 
         .rs-counter.style7 .counter-item .title {
+            font-size: 22px;
             color: #54647b;
         }
 
@@ -448,6 +449,7 @@
         }
 
         .title {
+            font-size: 42px;
             line-height: 52px;
             font-weight: 800;
             color: #031a3d;
@@ -617,16 +619,47 @@
         }
 
         .testimonial {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             background: #ffffff !important;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) !important;
+            /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) !important; */
             border-radius: 10px;
+            background: #ffffff !important;
+            box-shadow: 0 0 15px rgb(0 0 0 / 11%) !important;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 40px 45px;
         }
 
-        .testi_description h4 {
+        .testimonial_bg .testimonialimg {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            overflow: visible;
+            border: 8px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .testimonial_bg .testi_description {
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+            margin-top: 20px;
+            position: relative;
+            font-size: 17px;
+            font-style: italic;
+            text-align: justify;
+            border: none;
+            margin-right: 0;
+        }
+
+        .testimonialimg h4 {
+            font-size: 20px;
             color: black;
         }
 
-        .testi_description h5 {
+        .testimonialimg h5 {
             color: #555555;
         }
 
@@ -635,6 +668,17 @@
             font-style: italic;
             color: grey;
         }
+        ul.ratings {
+            margin: 0;
+            padding: 0;
+        }
+        .ratings li {
+            display: inline;
+        }
+        .ratings li i{
+            color: #fcb903;
+        }
+
         /* Footer */
         footer {
             background: url(../images/2.jpg);
@@ -648,51 +692,49 @@
         }
     </style>
 </head>
-
 <body>
     <!-- Main content Start -->
+    <!-- Banner Section Start -->
     <div class="main-content">
-        <!-- Banner Section Start -->
-        <div id="rs-banner" class="rs-banner style7">
+        <div class="rs-banner style7" id="rs-banner">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="banner-content">
                             <h1 class="banner-title white-color">Develop a Passion For Learning</h1>
-                            <div class="desc white-color mb-50">
-                                Every act of conscious learning requires the willingness to suffer an injury
-                                to one’s self-esteem. That is why young children
-                            </div>
-                            <div class="btn-part">
-                                <a class="readon border-less" href="#">Get Started Now</a>
-                            </div>
+
+                            <div class="desc white-color mb-50">Every act of conscious learning requires the willingness
+                                to suffer an injury to one’s self-esteem. That is why young children</div>
+
+                            <div class="btn-part"><a class="readon border-less" href="#">Get Started Now</a></div>
                         </div>
-                        <div class="icons one up-down">
-                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-15819810116745c3960b615!2.png?1732796692"
-                                alt="Images">
+
+                        <div class="icons one up-down"><img alt="Images"
+                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-15819810116745c3960b615!2.png?1732796692" />
                         </div>
-                        <div class="icons two left-right">
-                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-20384013816745c3960ad2c!1.png?1732796692"
-                                alt="Images">
+
+                        <div class="icons two left-right"><img alt="Images"
+                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-20384013816745c3960ad2c!1.png?1732796692" />
                         </div>
-                        <div class="icons three left-right">
-                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-20384013816745c3960ad2c!1.png?1732796692"
-                                alt="Images">
+
+                        <div class="icons three left-right"><img alt="Images"
+                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-20384013816745c3960ad2c!1.png?1732796692" />
                         </div>
-                        <div class="icons four up-down">
-                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-15819810116745c3960b615!2.png?1732796692"
-                                alt="Images">
+
+                        <div class="icons four up-down"><img alt="Images"
+                                src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-15819810116745c3960b615!2.png?1732796692" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="img-part">
-                <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732798241-12560113096748672180882!banner-1.png?1732798263"
-                    alt="Images">
+
+            <div class="img-part"><img alt="Images"
+                    src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732798241-12560113096748672180882!banner-1.png?1732798263" />
             </div>
         </div>
         <!-- Banner Section End -->
-        <!-- Services Section Start -->
+         <!-- Services Section Start -->
+
         <div class="rs-services style7 pt-100 md-pt-70">
             <div class="container">
                 <div class="row" style="display: flex;justify-content:center;align-items: center;flex-wrap: wrap;">
@@ -710,8 +752,7 @@
                                 <h4 class="title"><a href="#">Kindergarten</a></h4>
 
                                 <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius
-                                    .incididunt
-                                </p>
+                                    .incididunt</p>
                             </div>
                         </div>
                     </div>
@@ -730,8 +771,7 @@
                                 <h4 class="title"><a href="#">Primary School</a></h4>
 
                                 <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius
-                                    .incididunt
-                                </p>
+                                    .incididunt</p>
                             </div>
                         </div>
                     </div>
@@ -750,8 +790,7 @@
                                 <h4 class="title"><a href="#">High School</a></h4>
 
                                 <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius
-                                    .incididunt
-                                </p>
+                                    .incididunt</p>
                             </div>
                         </div>
                     </div>
@@ -770,8 +809,7 @@
                                 <h4 class="title"><a href="#">College/University</a></h4>
 
                                 <p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius
-                                    .incididunt
-                                </p>
+                                    .incididunt</p>
                             </div>
                         </div>
                     </div>
@@ -796,10 +834,9 @@
                             <h2 class="title mb-30">Change is The End Result of All True Learning</h2>
 
                             <p class="desc mb-25">Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius to
-                                mod
-                                tempor incididunt ut labore orem ipsum dolor sit amet, consectetur adipisic ing elit,
-                                sed eius
-                                to mod tempor incididunt ut labore incididunt. incididunt ut labore orem ipsum dolor</p>
+                                mod tempor incididunt ut labore orem ipsum dolor sit amet, consectetur adipisic ing
+                                elit, sed eius to mod tempor incididunt ut labore incididunt. incididunt ut labore orem
+                                ipsum dolor</p>
                         </div>
 
                         <div class="btn-part"><a class="readon banner-style uppercase" href="#">Read More</a></div>
@@ -819,10 +856,8 @@
                                 <h2 class="title white-color mb-16">Students Orientation 2020</h2>
 
                                 <div class="desc white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed eius
-                                    to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam.
-                                    Aenean
-                                    massa. Cum sociis natoque penatibus et magnis.</div>
+                                    sed eius to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad
+                                    minim veniam. Aenean massa. Cum sociis natoque penatibus et magnis.</div>
                             </div>
 
                             <div class="btn-part"><a class="readon border-less" href="#">Apply Now</a></div>
@@ -833,10 +868,8 @@
                                 <h2 class="title white-color mb-16">Admission Open for 2020</h2>
 
                                 <div class="desc white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed eius
-                                    to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam.
-                                    Aenean
-                                    massa. Cum sociis natoque penatibus et magnis.</div>
+                                    sed eius to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad
+                                    minim veniam. Aenean massa. Cum sociis natoque penatibus et magnis.</div>
                             </div>
 
                             <div class="btn-part"><a class="readon border-less" href="#">Apply Now</a></div>
@@ -911,8 +944,8 @@
                 </div>
             </div>
         </div>
-        <!-- Facilities Section End -->
-        <!-- Counter Section Start -->
+        <!-- Facilities Section End --><!-- Counter Section Start -->
+
         <div class="rs-counter style7 pb-100 md-pb-70">
             <div class="container">
                 <div class="row couter-area">
@@ -950,8 +983,8 @@
                 </div>
             </div>
         </div>
-        <!-- Counter Section Start -->
-        <!-- Team Section Start -->
+        <!-- Counter Section Start --><!-- Team Section Start -->
+
         <section class="staffTeam">
             <div class="container">
                 <div class="sec-title2 text-center mb-50 md-mb-30">
@@ -970,6 +1003,7 @@
                                 <div class="staff-content">
                                     <h3>Mrs.Ghada Aly</h3>
                                     <span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
+
                                     <ul class="social-links">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -996,6 +1030,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="staffteam">
                             <div class="staffteamimg"><img alt=""
                                     src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
@@ -1016,8 +1051,8 @@
                 </div>
             </div>
         </section>
-        <!-- Team Section End -->
-        <!-- Newsletter section start -->
+        <!-- Team Section End --><!-- Newsletter section start -->
+
         <div class="rs-newsletter style6 modify bg5 pt-100 pb-100 md-pb-70 md-pt-70">
             <div class="container">
                 <div class="row align-items-center">
@@ -1025,23 +1060,23 @@
                         <div class="newsletter-wrap">
                             <div class="content-part md-mb-30">
                                 <h2 class="title mb-10 white-color">Subscribe To Our Newsletter!</h2>
-                                <div class="sub-title white-color">Subscribe Newsletter </div>
+
+                                <div class="sub-title white-color">Subscribe Newsletter</div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-6">
                         <div class="newsletter-wrap">
-                            <form class="newsletter-form">
-                                <input type="email" id="email" name="email" placeholder="Enter Your Email" required="">
-                                <button type="submit">Submit</button>
-                            </form>
+                            <form class="newsletter-form"><input id="email" name="email" placeholder="Enter Your Email"
+                                    required="" type="email" /><button type="submit">Submit</button></form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Newsletter section end -->
-        <!-- Reviews  Start -->
+        <!-- Newsletter section end --><!-- Reviews  Start -->
+
         <section class="spaceb40 spacet40 testimonial_bg fullwidth text-white">
             <div class="container">
                 <div class="row">
@@ -1053,149 +1088,187 @@
                         <div class="divider">&nbsp;</div>
                     </div>
                     <!--./col-md-8-->
+                </div>
 
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="col-md-12 col-sm-12">
-                            <div class="testimonial">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="testimonialimg"><img
+                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+                                    <h4>Sidney W. Yarber</h4>
+
+                                    <h5>Manager</h5>
+                                    <ul class="ratings">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!--./testi_description-->
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="testi_description">
+                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
+                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./testimonial-->
+
+                    <div class="testimonial">
+                        <div class="row">
+                            <div class="col-md-4">
                                 <div class="testimonialimg">
                                     <img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
                                     <h4>Sidney W. Yarber</h4>
                                     <h5>Manager</h5>
+                                    <ul class="ratings">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
                                 </div>
+                                <!--./testi_description-->
+                            </div>
+
+                            <div class="col-md-8">
                                 <div class="testi_description">
                                     <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
                                         ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
                                 </div>
-                                <!--./testi_description-->
                             </div>
-                            <!--./testimonial-->
                         </div>
-                        <!--./col-md-12-->
+                    </div>
+                    <!--./testimonial-->
 
-                        <div class="col-md-12 col-sm-12">
-                            <div class="testimonial">
+                    <div class="testimonial">
+                        <div class="row">
+                            <div class="col-md-4">
                                 <div class="testimonialimg"><img
-                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img1.jpg" />
-                                </div>
-
-                                <div class="testi_description">
-                                    <h4>Kayla H. Seaman</h4>
-
-                                    <h5>Co &amp; Founder</h5>
-
-                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
-                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
-                                </div>
-                                <!--./testi_description-->
-                            </div>
-                            <!--./testimonial-->
-                        </div>
-                        <!--./col-md-12-->
-
-                        <div class="col-md-12 col-sm-12">
-                            <div class="testimonial">
-                                <div class="testimonialimg"><img
-                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img4.jpg" />
-                                </div>
-
-                                <div class="testi_description">
-                                    <h4>Terence M. Witzel</h4>
-
-                                    <h5>Businessman</h5>
-
-                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
-                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
-                                </div>
-                                <!--./testi_description-->
-                            </div>
-                            <!--./testimonial-->
-                        </div>
-                        <!--./col-md-12-->
-
-                        <div class="col-md-12 col-sm-12">
-                            <div class="testimonial">
-                                <div class="testimonialimg"><img
-                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img3.jpg" />
-                                </div>
-
-                                <div class="testi_description">
-                                    <h4>Williamson</h4>
+                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+                                    <h4>Sidney W. Yarber</h4>
 
                                     <h5>Manager</h5>
-
-                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
-                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                    <ul class="ratings">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
                                 </div>
                                 <!--./testi_description-->
                             </div>
-                            <!--./testimonial-->
+
+                            <div class="col-md-8">
+                                <div class="testi_description">
+                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
+                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                </div>
+                            </div>
                         </div>
-                        <!--./col-md-12-->
                     </div>
-                    <!--./testimonial-carousel-->
+                    <!--./testimonial-->
+                    <div class="testimonial">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="testimonialimg"><img
+                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+                                    <h4>Sidney W. Yarber</h4>
+
+                                    <h5>Manager</h5>
+                                    <ul class="ratings">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!--./testi_description-->
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="testi_description">
+                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
+                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./testimonial-->
                 </div>
-                <!--./row-->
+                <!--./testimonial-carousel-->
             </div>
             <!--./container-->
         </section>
-
         <!-- Reviews End -->
-        <script>
-            const tiltElement = document.querySelector('.js-tilt');
+         <!-- footer -->
+          <!-- Footer End -->
+    </div> <!-- Main-Contet end -->
+    <script>
+        const tiltElement = document.querySelector('.js-tilt');
 
-            tiltElement.addEventListener('mousemove', (e) => {
-                const rect = tiltElement.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
+        tiltElement.addEventListener('mousemove', (e) => {
+            const rect = tiltElement.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
 
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const rotateX = ((y - centerY) / centerY) * 15;
-                const rotateY = ((x - centerX) / centerX) * -15;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = ((y - centerY) / centerY) * 15;
+            const rotateY = ((x - centerX) / centerX) * -15;
 
-                tiltElement.querySelector('img').style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            tiltElement.querySelector('img').style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        tiltElement.addEventListener('mouseleave', () => {
+            tiltElement.querySelector('img').style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg)';
+        });
+
+        function animateCounter(element, start, end, duration) {
+            let startTime = null;
+
+            const step = (currentTime) => {
+                if (!startTime) startTime = currentTime;
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                const currentValue = Math.floor(progress * (end - start) + start);
+                element.textContent = currentValue.toLocaleString();
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                }
+            };
+
+            requestAnimationFrame(step);
+        }
+
+        function startCounters() {
+            const counters = document.querySelectorAll('.rs-count');
+            counters.forEach((counter) => {
+                const endValue = parseInt(counter.textContent.replace(/,/g, ''), 10);
+                animateCounter(counter, 0, endValue, 2000);
             });
+        }
 
-            tiltElement.addEventListener('mouseleave', () => {
-                tiltElement.querySelector('img').style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg)';
+
+        const counterSection = document.querySelector('.rs-counter');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    startCounters();
+                }
             });
+        }, { threshold: 0.5 });
 
-            function animateCounter(element, start, end, duration) {
-                let startTime = null;
-
-                const step = (currentTime) => {
-                    if (!startTime) startTime = currentTime;
-                    const progress = Math.min((currentTime - startTime) / duration, 1);
-                    const currentValue = Math.floor(progress * (end - start) + start);
-                    element.textContent = currentValue.toLocaleString();
-                    if (progress < 1) {
-                        requestAnimationFrame(step);
-                    }
-                };
-
-                requestAnimationFrame(step);
-            }
-
-            function startCounters() {
-                const counters = document.querySelectorAll('.rs-count');
-                counters.forEach((counter) => {
-                    const endValue = parseInt(counter.textContent.replace(/,/g, ''), 10);
-                    animateCounter(counter, 0, endValue, 2000);
-                });
-            }
-
-
-            const counterSection = document.querySelector('.rs-counter');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        startCounters();
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            observer.observe(counterSection);
-        </script>
+        observer.observe(counterSection);
+    </script>
 </body>
 
 </html>
