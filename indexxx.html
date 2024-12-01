@@ -1,613 +1,1453 @@
-<section class="services">
-    <div class="service-inner">
-        <div class="container" style="max-width: 100%;">
-            <div class="row d-flex" style="flex-wrap: wrap;">
-                <div class="col-md-4 col-sm-4 service-box">
-                    <div class="service-box-content">
-                        <h3><a href="#">Unity and Harmony</a></h3>
+<style type="text/css">@media screen and (max-width:1200px) {
+    .testi_description p {
+        padding-top: 60px;
+    }
 
-                        <p>Our school is a community where unity thrives. Students learn teamwork, empathy, and
-                            collaboration, preparing for a world where working together is essential.</p>
+    .main-part {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
 
-                        <div class="service-box-icon"><img
-                                src="https://demo.smart-school.in/uploads/gallery/media/scholarship-icon.png" /></div>
-                    </div>
-                </div>
+.owl-carousel .owl-dot {
+    background-color: #ddd;
+    width: 30px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 3px 0;
+    border-radius: 30px;
+}
 
-                <div class="col-md-4 col-sm-4 service-box">
-                    <div class="service-box-content">
-                        <h3><a href="#">Valuing Every Contribution</a></h3>
+/* Media Query End */
+a {
+    color: #21a7d0;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    outline: none !important;
+}
 
-                        <p>Every voice counts at our school. We cherish each person's unique contribution, creating an
-                            environment where everyone is valued and celebrated.</p>
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
 
-                        <div class="service-box-icon"><img
-                                src="https://demo.smart-school.in/uploads/gallery/media/book-icon.png" /></div>
-                    </div>
-                </div>
+/* Header */
+div#bootstrap-touch-slider {
+    display: none;
+}
 
-                <div class="col-md-4 col-sm-4 service-box">
-                    <div class="service-box-content">
-                        <h3><a href="#">Liflong Learning</a></h3>
+.main-content {
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+}
 
-                        <p>Our school fosters a love for learning that lasts a lifetime. We equip students with the
-                            skills and curiosity for continuous growth, preparing them for success in an ever-changing
-                            world</p>
+.rs-banner.style7 {
+    background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625291-6208839686745c38b0b793!banner-bg.jpg?1732796692);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 870px;
+}
 
-                        <div class="service-box-icon"><img
-                                src="https://demo.smart-school.in/uploads/gallery/media/teacher-icon.png" /></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+.rs-banner.style7 .banner-content {
+    position: relative;
+    padding: 200px 0;
+}
+
+.rs-banner.style7 .banner-content .banner-title {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 800;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.rs-banner.style7 .icons.one {
+    top: 136px;
+    right: 50px;
+}
+
+.rs-banner.style7 .icons {
+    position: absolute;
+}
+
+.rs-banner.style7 .icons.two {
+    left: 50%;
+    bottom: 100px;
+}
+
+.rs-banner.style7 .icons {
+    position: absolute;
+}
+
+.left-right {
+    animation: left-right 5s cubic-bezier(0.41, 0.04, 0.03, 1.1) infinite;
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.rs-banner.style7 .icons.three {
+    top: 95px;
+    left: -160px;
+}
+
+.rs-banner.style7 .icons {
+    position: absolute;
+}
+
+.rs-banner.style7 .icons.four {
+    bottom: 210px;
+    left: -62px;
+}
+
+.rs-banner.style7 .icons {
+    position: absolute;
+}
+
+.up-down {
+    animation: up-down 4s alternate infinite;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.rs-banner.style7 .img-part {
+    position: absolute;
+    right: 0;
+    bottom: 88px;
+}
+
+/* Services */
+.rs-services.style7 .services-item .content-part .title a {
+    color: #ffffff;
+}
+
+.rs-services.style7 .services-item .content-part .title a:hover {
+    color: #21a7d0;
+    transition: all 0.3s ease;
+}
+
+.pt-100 {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rs-services.style7 .services-item {
+    position: relative;
+}
+
+.rs-services.style7 .services-item .content-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 30px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.rs-services.style7 .services-item:hover .content-part {
+    top: -10px;
+}
+
+.rs-services.style7 .services-item .content-part .title {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.rs-services.style7 .services-item .content-part .desc {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* About */
+.sec-title2 .sub-title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #21a7d0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sec-title2 .title {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 800;
+    color: #031a3d;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.pl-50 {
+    padding-left: 50px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+p {
+    margin: 0 0 26px;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.readon {
+    outline: none;
+    padding: 12px 40px;
+    border: 1px solid #21a7d0;
+    border-radius: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #111111;
+    background: #f3f8f9;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.readon.banner-style {
+    color: #ffffff;
+    background: #21a7d0;
+    padding: 16px 58px;
+}
+
+.readon.banner-style:hover {
+    background: #1e95ba;
+}
+
+.img-part {
+    perspective: 800px;
+}
+
+.img-part img {
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
+
+/* cta */
+.rs-cta {
+    position: relative;
+}
+
+.rs-cta.style7 {
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+.rs-cta.style7 .partition-bg-wrap {
+    background: none !important;
+    position: relative;
+}
+
+.rs-cta.style7 .partition-bg-wrap:after,
+.rs-cta.style7 .partition-bg-wrap:before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.rs-cta.style7 .partition-bg-wrap:before {
+    background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1732649932-1815762135674623cc71de7!2.png?1732649932);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+}
+
+.rs-cta.style7 .partition-bg-wrap:after {
+    background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1732649926-340500917674623c6505b9!1.png?1732649932);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sec-title2 .title.white-color {
+    color: #ffffff;
+}
+
+.white-color {
+    color: #ffffff !important;
+}
+
+.readon.border-less {
+    border: none;
+}
+
+.readon.border-less:hover {
+    background: rgba(243, 248, 239, 0.8);
+    color: #111111;
+}
+
+/* facilities  */
+.rs-facilities .img-part {
+    position: relative;
+}
+
+.choose-part {
+    max-width: 700px;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 80px 40px;
+    background: #e7f8fb;
+}
+
+.rs-facilities .img-part .media-icon {
+    position: absolute;
+    left: 80px;
+    top: 90px;
+}
+
+.rs-facilities .choose-part .our-facilities .icon-part img {
+    max-width: 55px;
+}
+
+.media-icon .popup-videos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background: #21a7d0;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.media-icon .popup-videos:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.media-icon .popup-videos i:before {
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.rs-facilities .choose-part .our-facilities .content-part .text-part {
+    padding-left: 30px;
+}
+
+.rs-facilities .choose-part .our-facilities .content-part .text-part .title {
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: 800;
+    color: #031a3d;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.rs-facilities .choose-part .our-facilities .content-part .text-part .desc {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #54647b;
+    margin: 0;
+}
+
+.rs-facilities .choose-part .our-facilities {
+    display: flex;
+    align-items: center;
+}
+
+/* counter */
+.rs-counter .counter-item .rs-count {
+    position: relative;
+    display: inline-block;
+    font-size: 42px;
+    line-height: 1;
+    color: #112958;
+    padding-right: 25px;
+    margin-bottom: 15px;
+}
+
+.rs-counter.style7 .counter-item .title {
+    font-size: 22px;
+    color: #54647b;
+}
+
+.rs-counter.style7 .counter-item .rs-count.purple-color {
+    color: #c701f1;
+}
+
+.rs-counter.style7 .counter-item .rs-count.blue-color {
+    color: #065ce8;
+}
+
+.rs-counter.style7 .counter-item .rs-count.pink-color {
+    color: #f6075b;
+}
+
+.rs-counter.style7 .counter-item .rs-count.orange-color {
+    color: #ffbc00;
+}
+
+/* Staff Team */
+.staffTeam {
+    padding: 60px 15px;
+    background: #e7f8fb;
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+.sub-title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #21a7d0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 800;
+    color: #031a3d;
+}
+
+.staffteamimg {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 0%;
+}
+
+.staffteam .staffteamimg img {
+    margin-left: 10px;
+    position: relative;
+    border-radius: 0%;
+    object-fit: cover;
+    aspect-ratio: 2 / 2;
+}
+
+.staff-content {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.3s ease;
+    opacity: 0;
+    background: #c701f1d6 !important;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.staffteamimg:hover .staff-content {
+    opacity: 1;
+    transform: translate(-50%, 50%);
+}
+
+.staffteam .staffteamimg:before {
+    display: none;
+}
+
+.staffteam ul {
+    display: block;
+}
+
+.social-links li {
+    position: relative;
+    background: none repeat scroll 0 0;
+    border-radius: 0;
+    display: inline-block;
+    height: 36px;
+    margin-right: 5px;
+    text-align: center;
+    width: 36px;
+    color: white;
+    transition: .3s;
+    box-shadow: none;
+}
+
+.social-links li a i {
+    line-height: 36px;
+    font-size: 18px;
+    color: white;
+}
+
+.staff-content h3,
+.staff-content span.post {
+    color: white !important;
+}
+
+.staff-content h3:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+.staffteam:hover .staffteamimg img {
+    transform: scale(1);
+    /* transition: all 500ms ease; */
+}
+
+.social-links li a i:hover {
+    color: black;
+}
+
+.social-links li a:hover {
+    background: none;
+}
+
+/* Partner */
+.rs-partner .partner-item a img {
+    max-width: 163px;
+    margin: 0 auto;
+}
+
+/* NewsLetter */
+.bg5 {
+    background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1732799708-39868948167486cdc970c5!bg.png?1732799709);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.rs-newsletter.style6 .newsletter-wrap .content-part .title {
+    font-size: 42px;
+    line-height: 46px;
+    font-weight: 600;
+    color: #031a3d;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.rs-newsletter.style6 .newsletter-wrap .content-part .sub-title {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+    color: #54647b;
+}
+
+.rs-newsletter.style6 .newsletter-wrap .newsletter-form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.rs-newsletter.style6 .newsletter-wrap .newsletter-form #email {
+    width: 100%;
+}
+
+.rs-newsletter.style6 .newsletter-wrap .newsletter-form input {
+    background: #ffffff;
+    color: #505050;
+    padding: 18px 40px;
+    padding-right: 150px;
+}
+
+.rs-newsletter.style6 .newsletter-wrap .newsletter-form input,
+.rs-newsletter.style6 .newsletter-wrap .newsletter-form button {
+    outline: none;
+    border: none;
+}
+
+.rs-newsletter.modify .newsletter-wrap .newsletter-form button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background: #21a7d0;
+    color: #ffffff;
+    padding: 14px 38px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+/* Reviews */
+.testimonial_bg {
+    background: #e7f8fb !important;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #ffffff !important;
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.05) !important; */
+    border-radius: 10px;
+    background: #ffffff !important;
+    box-shadow: 0 0 15px rgb(0 0 0 / 11%) !important;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 40px 45px;
+}
+
+.testimonial_bg .testimonialimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: visible;
+    border: 8px solid rgba(255, 255, 255, 0.15);
+}
+
+.testimonial_bg .testi_description {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+    font-size: 17px;
+    font-style: italic;
+    text-align: justify;
+    border: none;
+    margin-right: 0;
+    padding: 19px 4px;
+}
+
+.testimonialimg h4 {
+    font-size: 15px;
+    color: black;
+}
+
+.testimonialimg h5 {
+    color: #555555;
+}
+
+.testi_description p {
+    font-size: 17px;
+    font-style: italic;
+    color: grey;
+}
+
+ul.ratings {
+    margin: 0;
+    padding: 0;
+}
+
+.ratings li {
+    display: inline;
+}
+
+.ratings li i {
+    color: #fcb903;
+}
+
+/* Footer */
+footer {
+    display: none;
+    background: url(../images/2.jpg);
+    clear: both;
+    padding-top: 20px;
+    color: #BAC0C5;
+    z-index: 0;
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+footer:after {
+    position: absolute;
+    content: "";
+    background: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    top: 0;
+}
+
+.rs-footer {
+    display: block;
+    background-image: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1733044696-1718199326674c29d816618!footer-bg.png?1733045467);
+    background-color: #273c66;
+    background-size: cover;
+}
+
+.rs-footer.style7 .footer-top {
+    padding: 100px 0 93px;
+}
+
+.rs-footer .footer-top .widget-title {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.rs-footer .footer-top .address-widget li .desc {
+    margin-bottom: 13px;
+    padding-left: 35px;
+    color: #ffffff;
+}
+
+.rs-footer .footer-top .address-widget li i {
+    position: absolute;
+}
+
+.rs-footer.style7 .footer-top .address-widget li i:before {
+    position: absolute;
+    color: #21a7d0 !important;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.rs-footer .footer-top .address-widget li .desc a {
+    color: #ffffff;
+}
+
+.rs-footer .footer-top .site-map li {
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 11px;
+}
+
+.rs-footer .footer-top .site-map li a {
+    color: #e8e8e8;
+}
+
+.rs-footer .footer-top .site-map li:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: #21a7d0;
+}
+
+.rs-footer .footer-bottom {
+    padding: 40px 0;
+    background: transparent;
+    position: relative;
+}
+
+.rs-footer .footer-bottom:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 100%;
+    max-width: 1240px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.rs-footer .footer-bottom .footer-logo a {
+    display: inline-block;
+}
+
+.rs-footer .footer-bottom .footer-logo a img {
+    max-width: 100px;
+}
+
+.rs-footer .footer-bottom .copyright p {
+    margin-bottom: 0;
+    color: #f3f8f9;
+}
+
+.rs-footer .footer-bottom .copyright a {
+    color: #21a7d0;
+}
+
+.rs-footer .footer-bottom .footer-social li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.rs-footer .footer-bottom .footer-social li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+    background: #21a7d0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.copyright.text-center.md-text-start,
+ul.footer-social {
+    padding-top: 30px;
+}
+</style>
+<!-- Main content Start --><!-- Banner Section Start -->
+<div class="main-content">
+<div class="rs-banner style7" id="rs-banner">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="banner-content">
+<h1 class="banner-title white-color">Develop a Passion For Learning</h1>
+
+<div class="desc white-color mb-50">Every act of conscious learning requires the willingness to suffer an injury to one’s self-esteem. That is why young children</div>
+
+<div class="btn-part"><a class="readon border-less" href="#">Get Started Now</a></div>
+</div>
+
+<div class="icons one up-down"><img alt="Images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-15819810116745c3960b615!2.png?1732796692" /></div>
+
+<div class="icons two left-right"><img alt="Images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-20384013816745c3960ad2c!1.png?1732796692" /></div>
+
+<div class="icons three left-right"><img alt="Images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-20384013816745c3960ad2c!1.png?1732796692" /></div>
+
+<div class="icons four up-down"><img alt="Images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732625302-15819810116745c3960b615!2.png?1732796692" /></div>
+</div>
+</div>
+</div>
+
+<div class="img-part"><img alt="Images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732798241-12560113096748672180882!banner-1.png?1732798263" /></div>
+</div>
+<!-- Banner Section End --><!-- Services Section Start -->
+
+<div class="rs-services style7 pt-100 md-pt-70">
+<div class="container">
+<div class="row" style="display: flex;justify-content:center;align-items: center;flex-wrap: wrap;">
+<div class="col-lg-3 col-md-6 md-mb-30">
+<div class="services-item">
+<div class="img-part"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629832-8317560606745d548a1d0e!1.png?1732629833" /></div>
+
+<div class="content-part">
+<div class="icon-part mb-30 md-mb-15"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629886-15252803846745d57e049c9!1.png?1732629886" /></div>
+
+<h4 class="title"><a href="#">Kindergarten</a></h4>
+
+<p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius .incididunt</p>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 md-mb-30">
+<div class="services-item">
+<div class="img-part"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-2737733706745d600841b1!2.png?1732630017" /></div>
+
+<div class="content-part">
+<div class="icon-part mb-30 md-mb-15"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-5375072506745d59def36b!2.png?1732629918" /></div>
+
+<h4 class="title"><a href="#">Primary School</a></h4>
+
+<p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius .incididunt</p>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 md-mb-30">
+<div class="services-item">
+<div class="img-part"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-1598393936745d60085d90!3.png?1732630017" /></div>
+
+<div class="content-part">
+<div class="icon-part mb-30 md-mb-15"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-5884132016745d59defffa!3.png?1732629918" /></div>
+
+<h4 class="title"><a href="#">High School</a></h4>
+
+<p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius .incididunt</p>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<div class="services-item">
+<div class="img-part"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732630016-5028942966745d60087cd2!4.png?1732630017" /></div>
+
+<div class="content-part">
+<div class="icon-part mb-30 md-mb-15"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732629917-6115242796745d59df097b!4.png?1732629918" /></div>
+
+<h4 class="title"><a href="#">College/University</a></h4>
+
+<p class="desc">Lorem ipsum dolor sit amet,consectetur adipisic ing elit, sed eius .incididunt</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Services Section End --><!-- About Section Start -->
+
+<div class="rs-about style7 pt-100 pb-100 md-pt-70 md-pb-70">
+<div class="container">
+<div class="row" style="display:flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+<div class="col-lg-6 col-md-12 md-mb-30">
+<div class="img-part js-tilt"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732631529-14711997076745dbe924d05!about.png?1732631529" /></div>
+</div>
+
+<div class="col-lg-6 pl-50 md-pl-15 col-md-12">
+<div class="sec-title2">
+<div class="sub-title">About</div>
+
+<h2 class="title mb-30">Change is The End Result of All True Learning</h2>
+
+<p class="desc mb-25">Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius to mod tempor incididunt ut labore orem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius to mod tempor incididunt ut labore incididunt. incididunt ut labore orem ipsum dolor</p>
+</div>
+
+<div class="btn-part"><a class="readon banner-style uppercase" href="#">Read More</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- About Section End --><!-- CTA Section Start -->
+
+<div class="rs-cta style7">
+<div class="partition-bg-wrap">
+<div class="container">
+<div class="row pt-100 md-pt-70 pb-100 md-pb-70" style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+<div class="col-lg-6 pl-62 md-pl-15 col-md-12 md-pb-70">
+<div class="sec-title2 mb-40">
+<h2 class="title white-color mb-16">Students Orientation 2020</h2>
+
+<div class="desc white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eius to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam. Aenean massa. Cum sociis natoque penatibus et magnis.</div>
+</div>
+
+<div class="btn-part"><a class="readon border-less" href="#">Apply Now</a></div>
+</div>
+
+<div class="col-lg-6 pl-62 md-pl-15 col-md-12 md-pt-70">
+<div class="sec-title2 mb-40">
+<h2 class="title white-color mb-16">Admission Open for 2020</h2>
+
+<div class="desc white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eius to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam. Aenean massa. Cum sociis natoque penatibus et magnis.</div>
+</div>
+
+<div class="btn-part"><a class="readon border-less" href="#">Apply Now</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section End --><!-- Facilities Section Start -->
+
+<div class="rs-facilities pt-100 pb-100 md-pt-70 md-pb-70">
+<div class="container">
+<div class="relative">
+<div class="img-part"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651507-1114684522674629f3c9f30!bg-1.png?1732651508" />
+<div class="media-icon "><a class="popup-videos" href="https://www.youtube.com/watch?v=atMUy_bPoQI"><i class="fa fa-play"></i> </a></div>
+</div>
+
+<div class="choose-part">
+<div class="sec-title2 md-mb-30">
+<div class="sub-title uppercase mb-10">Top Courses</div>
+
+<h2 class="title mb-0">Our Facilities</h2>
+</div>
+
+<div class="our-facilities mb-15">
+<div class="icon-part"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-522866806674629ea1a1c1!1.png?1732651508" /></div>
+
+<div class="content-part pt-30 md-pt-0">
+<div class="text-part">
+<h2 class="title">Global Certificate</h2>
+
+<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
+sed eius to mod tempor incididunt.</p>
+</div>
+</div>
+</div>
+
+<div class="our-facilities mb-40">
+<div class="icon-part"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-647883945674629ea1b222!2.png?1732651508" /></div>
+
+<div class="content-part pt-30 md-pt-0">
+<div class="text-part">
+<h2 class="title">Global Certificate</h2>
+
+<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
+sed eius to mod tempor incididunt.</p>
+</div>
+</div>
+</div>
+
+<div class="our-facilities ">
+<div class="icon-part"><img alt="images" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732651498-5133652674629ea1d526!3.png?1732651508" /></div>
+
+<div class="content-part">
+<div class="text-part">
+<h2 class="title">Global Certificate</h2>
+
+<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisic,<br />
+sed eius to mod tempor incididunt.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Facilities Section End --><!-- Counter Section Start -->
+
+<div class="rs-counter style7 pb-100 md-pb-70">
+<div class="container">
+<div class="row couter-area">
+<div class="col-lg-3 col-md-6 md-mb-30">
+<div class="counter-item text-center">
+<h2 class="rs-count purple-color">2958</h2>
+
+<h4 class="title mb-0">Finished Sessions</h4>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 md-mb-30">
+<div class="counter-item text-center">
+<h2 class="rs-count plus blue-color">4523</h2>
+
+<h4 class="title mb-0">Enrolled Learners</h4>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 sm-mb-30">
+<div class="counter-item text-center">
+<h2 class="rs-count plus pink-color">120</h2>
+
+<h4 class="title mb-0">Online Instructors</h4>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<div class="counter-item text-center">
+<h2 class="rs-count percent orange-color">100%</h2>
+
+<h4 class="title mb-0">Satisfaction Rate</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Counter Section Start --><!-- Team Section Start -->
+
+<section class="staffTeam">
+<div class="container">
+<div class="sec-title2 text-center mb-50 md-mb-30">
+<div class="sub-title primary">Instructor</div>
+
+<h2 class="title mb-0">Expert Teachers</h2>
+
+<div class="divider">&nbsp;</div>
+</div>
+
+<div class="teamstaff">
+<div class="owl-carousel staff-carousel">
+<div class="staffteam">
+<div class="staffteamimg"><img alt="" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
+<div class="staff-content">
+<h3>Mrs.Ghada Aly</h3>
+<span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
+
+<ul class="social-links">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="staffteam">
+<div class="staffteamimg"><img alt="" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
+<div class="staff-content">
+<h3>Mrs.Ghada Aly</h3>
+<span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
+
+<ul class="social-links">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="staffteam">
+<div class="staffteamimg"><img alt="" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732656526-1887392767463d8e0d1e8!1.jpg?1732656526" />
+<div class="staff-content">
+<h3>Mrs.Ghada Aly</h3>
+<span class="post" style="color:#bd0745;">BRITISH DIVISION PRINCIPAL</span>
+
+<ul class="social-links">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
+<!-- Team Section End --><!-- Newsletter section start -->
 
-<section class="bggray fullwidth" style="padding: 60px 0;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 pt-0-mobile">
-                <div class="row"
-                    style="display:flex; align-items:center; justify-content: space-between; flex-wrap: wrap;">
-                    <div class="col-md-6">
-                        <div class="description-aboutus">
-                            <p style="color: #bd0745; font-family: Inter, sans-serif;font-size: 16px;
-                                                        font-weight: 600;
-                                                        letter-spacing: 2px;
-                                                        text-transform: uppercase;">Who we are</p>
+<div class="rs-newsletter style6 modify bg5 pt-100 pb-100 md-pb-70 md-pt-70">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<div class="newsletter-wrap">
+<div class="content-part md-mb-30">
+<h2 class="title mb-10 white-color">Subscribe To Our Newsletter!</h2>
 
-                            <h1><span style="font-size: 48px">Knowledge will bring you the opportunity to make a
-                                    difference.</span></h1>
-                            &nbsp;
+<div class="sub-title white-color">Subscribe Newsletter</div>
+</div>
+</div>
+</div>
 
-                            <p><span style="
-                                                        color: rgb(56, 58, 60);
-                                                        font-family: Inter, sans-serif;
-                                                        font-size: 16px;
-                                                      ">EPIC International School is a private co-educational day
-                                    school. Founded in 2019, the school offers two educational programs: The American
-                                    Program. We are proud of our professional teaching staff composed of highly
-                                    qualified educators who continue to improve their education, knowledge, and skills.
-                                </span><br />
-                                <br />
-                                <span style="color:#FFFFE0;"><span
-                                        style="font-family: Inter, sans-serif; font-size: 16px"><span
-                                            style="background-color: #bd0745"><input name="Discover More"
-                                                style="background-color: #bd0745; border: none; padding: 10px"
-                                                type="button" value="Discover More" /></span></span></span><span style="
-                                                        color: rgb(56, 58, 60);
-                                                        font-family: Inter, sans-serif;
-                                                        font-size: 16px;"></span>
-                            </p>
-                        </div>
-                    </div>
+<div class="col-lg-6">
+<div class="newsletter-wrap">
+<form class="newsletter-form"><input id="email" name="email" placeholder="Enter Your Email" required="" type="email" /><button type="submit">Submit</button></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Newsletter section end --><!-- Reviews  Start -->
 
-                    <div class="col-md-6"><img
-                            src="https://ecas.takamulsoftware.com/uploads/gallery/media/1727091479-95901142966f15317cd17e!bg.jpg?1727530585"
-                            style="width: 525px; max-width: 100%;border-radius: 5px;" /></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<section class="spaceb40 spacet40 testimonial_bg fullwidth text-white">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-sm-12 col-md-offset-2 text-center">
+<div class="sub-title primary text-white">Student Reviews</div>
 
-<section class="countdown_bg fullwidth counter">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-6">
-                <div class="counter-content">
-                    <h2 class="counter-title mt0">The EPIC story through data</h2>
+<h2 class="title mb-0">What Our Students Say</h2>
 
-                    <div class="counter-img">
-                        <div class="about_img"><img class="img-responsive img-rounded"
-                                src="https://ecas.takamulsoftware.com/uploads/gallery/media/1727104425-43057384466f185a9dcbc7!Picture5.jpg?1727530585" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--./col-md-6-->
+<div class="divider">&nbsp;</div>
+</div>
+<!--./col-md-8--></div>
 
-            <div class="col-md-6 col-lg-6 col-sm-6">
-                <div class="row d-flex" style="flex-wrap: wrap; row-gap: 15px; align-items: stretch; ">
-                    <div class="col-xs-6 ">
-                        <div class="counter-main"><svg class="svg replaced-svg" height="31.89px" id="Capa_1"
-                                style="enable-background:new 0 0 31.89 31.89;" version="1.1" viewbox="0 0 31.89 31.89"
-                                width="31.89px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
-                                <g>
-                                    <g>
-                                        <path
-                                            d="M7.247,17.634v4.5c0,0,3.816,4.219,9.185,4.219c6.753,0,9.184-4.219,9.184-4.219v-4.882l-7.929,4.634    c-0.566,0.331-1.265,0.354-1.852,0.059L7.247,17.634z">
-                                        </path>
-                                        <path
-                                            d="M16.63,12.277c-0.991,0-1.978-0.207-2.511-0.637l-9.533,3.302l11.313,5.663c0.585,0.293,1.281,0.271,1.844-0.06    l13.183-7.685c0.615-0.358,0.984-1.025,0.963-1.737s-0.435-1.354-1.07-1.672L17.166,2.619c-0.585-0.293-1.279-0.271-1.844,0.059    L2.139,10.362c-0.615,0.358-0.984,1.025-0.962,1.737c0.023,0.711,0.434,1.353,1.071,1.672l-0.029,6.977    c-0.682,0.239-1.17,0.892-1.17,1.653c0,0.565,0.266,1.067,0.682,1.391c-0.132,0.963-0.581,1.656-1.113,2.152    c-0.426,0.396-0.651,0.963-0.614,1.545c0.037,0.58,0.333,1.115,0.807,1.453l0.242,0.174c0.449,0.32,1.013,0.436,1.552,0.312    s1-0.465,1.269-0.945c0.928-1.658,0.478-3.811,0.171-4.844c0.317-0.316,0.514-0.755,0.514-1.238c0-0.758-0.482-1.405-1.157-1.649    L3.43,14.09l10.349-3.584c0.09-0.439,0.533-0.843,0.533-0.843c-0.034,0.119,0.033,1.564,2.222,1.564    c1.258,0,2.275-0.401,2.275-1.221c0-0.15-0.035-0.313-0.1-0.481c0.354,0.436,0.565,0.928,0.565,1.331    C19.276,11.81,18.091,12.277,16.63,12.277z">
-                                        </path>
-                                    </g>
-                                </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                            </svg>
+<div class="owl-carousel testimonial-carousel">
+<div class="testimonial">
+<div class="row">
+<div class="col-md-4">
+<div class="testimonialimg"><img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+<h4>Sidney W. Yarber</h4>
 
-                            <h3 class="counter-value" data-count="1000">1000</h3>
-                            <span>Successful Graduates</span>
-                        </div>
-                    </div>
+<h5>Manager</h5>
 
-                    <div class="col-xs-6">
-                        <div class="counter-main"><svg class="svg replaced-svg" id="Layer_1"
-                                style="enable-background:new 0 0 504.54 504.54;" version="1.1"
-                                viewbox="0 0 504.54 504.54" x="0px" xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
-                                <g>
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M263.123,121.839l-10.428-26.078l-10.428,26.078c-1.109,2.773-3.584,4.762-6.528,5.248l-38.707,6.451l24.986,24.986     c1.946,1.954,2.833,4.719,2.381,7.441l-6.135,36.83l30.046-18.022c2.697-1.621,6.084-1.621,8.781,0l30.037,18.022l-6.135-36.83     c-0.452-2.722,0.435-5.487,2.381-7.441l24.986-24.986l-38.707-6.451C266.707,126.601,264.232,124.612,263.123,121.839z">
-                                            </path>
-                                            <path
-                                                d="M388.485,162.305c-5.53-5.146-8.414-11.298-7.893-16.87c0.375-4.156,2.679-7.689,6.656-10.223     c0.529-0.333,1.007-0.725,1.451-1.161l7.552-7.552c11.119-11.127,14.054-27.554,7.484-41.847     c-6.571-14.285-20.855-22.673-36.642-21.53l-11.196,0.862c-5.675,0.41-11.068-1.451-15.223-5.308     c-4.156-3.849-6.451-9.088-6.451-14.763v-6.656c0-16.017-9.762-29.79-24.883-35.098c-14.814-5.197-30.711-0.819-40.755,11.145     c-8.542,6.741-24.499,6.793-32.555,0.085C225.993,1.358,210.036-3.054,195.197,2.16c-15.113,5.308-24.883,19.081-24.883,35.098     v6.656c0,5.675-2.287,10.914-6.451,14.763c-4.156,3.857-9.523,5.726-15.215,5.308l-11.196-0.862     c-15.795-1.178-30.071,7.245-36.642,21.53c-6.579,14.302-3.635,30.729,7.492,41.847l7.535,7.552     c0.725,0.717,1.57,1.306,2.5,1.732c3.635,1.655,5.777,4.087,6.366,7.245c1.033,5.444-2.313,12.757-8.866,19.482l-7.535,7.552     c-11.128,11.119-14.071,27.546-7.492,41.839c6.571,14.302,21.026,22.733,36.642,21.538l11.187-0.862     c5.897-0.495,11.648,1.604,15.983,5.632c3.874,3.593,6.093,8.414,6.076,13.252v12.979c0.008,15.061,7.654,27.648,20.446,33.647     c13.79,6.468,30.353,3.84,43.247-6.861c0.324-0.273,0.632-0.572,0.913-0.896l1.92-2.15c2.56-2.867,8.602-4.796,15.053-4.796     c6.443,0,12.484,1.929,15.036,4.796l1.92,2.15c0.239,0.273,0.503,0.529,0.768,0.768c7.945,6.921,17.86,10.53,27.776,10.53     c5.854,0,11.725-1.263,17.169-3.857c12.8-6.076,20.173-18.005,19.712-31.607V252.98c-0.154-5.837,2.022-11.187,6.127-15.078     c4.062-3.866,9.412-5.769,15.104-5.325l11.204,0.862c15.753,1.152,30.063-7.245,36.642-21.53     c6.571-14.293,3.635-30.72-7.484-41.856L388.485,162.305z M332.148,133.88l-33.604,33.604L307,218.215     c0.546,3.285-0.87,6.588-3.618,8.465c-1.442,0.981-3.115,1.476-4.804,1.476c-1.51,0-3.029-0.41-4.386-1.22l-41.498-24.9     l-41.498,24.9c-2.867,1.715-6.451,1.613-9.19-0.256c-2.748-1.877-4.164-5.18-3.618-8.465l8.448-50.731L173.24,133.88     c-2.261-2.261-3.063-5.598-2.091-8.636c0.973-3.046,3.567-5.291,6.724-5.811l50.321-8.388l16.58-41.429     c1.297-3.243,4.429-5.367,7.919-5.367c3.499,0,6.63,2.125,7.927,5.367l16.572,41.429l50.321,8.388     c3.157,0.521,5.751,2.765,6.724,5.811C335.211,128.282,334.409,131.619,332.148,133.88z">
-                                            </path>
-                                            <path
-                                                d="M322.272,313.189c-7.68,3.652-15.923,5.504-24.499,5.504h-0.017c-13.193,0-26.027-4.548-36.523-12.783v52.497     c0,4.719-3.814,8.533-8.533,8.533c-4.719,0-8.533-3.814-8.533-8.533v-53.274c-10.991,8.695-24.073,13.517-37.222,13.517     c-8.064,0-15.821-1.724-23.057-5.111c-6.46-3.038-11.998-7.33-16.58-12.467l-0.034,194.935c0,3.618,2.278,6.844,5.683,8.047     c0.93,0.333,1.903,0.486,2.85,0.486c2.526,0,4.975-1.118,6.63-3.157l70.298-86.793l70.118,85.76     c2.295,2.79,6.093,3.831,9.481,2.628c3.396-1.212,5.666-4.429,5.666-8.038V301.703     C333.621,306.311,328.398,310.279,322.272,313.189z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                                <g> </g>
-                            </svg>
+<ul class="ratings">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+<!--./testi_description--></div>
 
-                            <h3 class="counter-value" data-count="500">500</h3>
-                            <span>Student Satisfaction Rate</span>
-                        </div>
-                    </div>
+<div class="col-md-8">
+<div class="testi_description">
+<p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+</div>
+</div>
+</div>
+</div>
+<!--./testimonial-->
 
-                    <div class="col-xs-6">
-                        <div class="counter-main"><svg class="svg replaced-svg" height="1792" viewbox="0 0 1792 1792"
-                                width="1792" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M576 1312v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm0-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm256 0v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm768 512v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm768 512v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm768 512v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm512 256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256-256v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm256 0v64q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5zm-256 1376h384v-1536h-1152v1536h384v-224q0-13 9.5-22.5t22.5-9.5h320q13 0 22.5 9.5t9.5 22.5v224zm512-1600v1664q0 26-19 45t-45 19h-1280q-26 0-45-19t-19-45v-1664q0-26 19-45t45-19h1280q26 0 45 19t19 45z">
-                                </path>
-                            </svg>
+<div class="testimonial">
+<div class="row">
+<div class="col-md-4">
+<div class="testimonialimg"><img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+<h4>Sidney W. Yarber</h4>
 
-                            <h3 class="counter-value" data-count="100">100</h3>
-                            <span>Freshman graduation rate</span>
-                        </div>
-                    </div>
-                    <!--./col-md-6-->
-                </div>
-                <!--./row-->
-            </div>
-            <!--./col-md-6-->
-        </div>
-        <!--./row-->
-    </div>
-    <!--./container-->
-</section>
+<h5>Manager</h5>
 
-<section class="container spacet40r fullwidth" style="position:relative; padding: 60px 0; overflow: hidden;">
-    <div class="container">
-        <div class="p" style="position: relative;">
-            <div class="shape" style="
-                    width: 461px;
-                    height: 461px;
-                    border-radius: 50%;
-                    background:#b33230;
-                    position: absolute;
-                    left: 50%;
-                    opacity: 0.1;
-              
-                    transform: translate(-50%,-10%);
-                ">&nbsp;</div>
-        </div>
+<ul class="ratings">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+<!--./testi_description--></div>
 
-        <div class="content">
-            <h1 class="elementor-heading-title elementor-size-default"
-                style="box-sizing: border-box; margin-block: 0.5rem 1rem; font-family: Inter, sans-serif; font-weight: var( --e-global-typography-5d167aa-font-weight ); line-height: var( --e-global-typography-5d167aa-line-height ); color: var( --e-global-color-secondary ); font-size: var( --e-global-typography-5d167aa-font-size ); padding: 0px; margin: 0px; letter-spacing: var( --e-global-typography-5d167aa-letter-spacing ); background-color: rgb(255, 255, 255); text-align: center;">
-                <span style="font-size:44px;"><strong>Are you ready to take the next<br />
-                        step toward your children's<br />
-                        future career?</strong></span>
-            </h1>
-            &nbsp;
+<div class="col-md-8">
+<div class="testi_description">
+<p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+</div>
+</div>
+</div>
+</div>
+<!--./testimonial-->
 
-            <p style="text-align: center;"><span
-                    style="color: rgb(56, 58, 60); font-family: Inter, sans-serif; font-size: 16px; text-align: center; background-color: rgb(255, 255, 255);">Equip
-                    your children with the tools and opportunities they need to thrive in their future careers<br />
-                    Our comprehensive approach ensures they are prepared, confident,<br />
-                    and ready to embrace the challenges of tomorrow’s world.</span><br />
-                &nbsp;</p>
+<div class="testimonial">
+<div class="row">
+<div class="col-md-4">
+<div class="testimonialimg"><img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+<h4>Sidney W. Yarber</h4>
 
-            <div style="text-align: center; color:#ffffff;"><a
-                    class="elementor-button elementor-button-link elementor-size-md"
-                    href="https://ecas.takamulsoftware.com/online_admission" style="position:relative; color:#ffffff;"
-                    target="_blank"><span class="elementor-button-content-wrapper"> <span
-                            class="elementor-button-text"><input name="Apply Now" style="background-color: #bd0745; border: none; padding: 12px;
-                width: 140px;" type="button" value="Apply Now" /></span> </span> </a></div>
-        </div>
-    </div>
-</section>
+<h5>Manager</h5>
 
-<section class="spaceb40 spacet40">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-12 col-md-offset-2 text-center">
-                <h2 class="head-title">OUR EXPERIENCED STAFFS</h2>
-                <p>Considering desire as primary motivation for the generation of narratives is a useful concept.</p>
-                <div class="divider">&nbsp;</div>
-            </div>
-            <!--./col-md-8-->
-            <div class="teamstaff">
-                <div class="row">
-                    <div class="owl-carousel staff-carousel owl-loaded owl-drag">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage"
-                                style="transform: translate3d(-1300px, 0px, 0px); transition: all; width: 3900px;">
-                                <div class="owl-item cloned" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img alt=""
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher2.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<ul class="ratings">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+<!--./testi_description--></div>
 
-                                            <div class="staff-content">
-                                                <h3>Stella Roffin</h3>
-                                                <span class="post">Drawing Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher1-1556236800.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<div class="col-md-8">
+<div class="testi_description">
+<p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+</div>
+</div>
+</div>
+</div>
+<!--./testimonial-->
 
-                                            <div class="staff-content">
-                                                <h3>Princy Flora</h3>
-                                                <span class="post">English Tutor</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher2-1556236800.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<div class="testimonial">
+<div class="row">
+<div class="col-md-4">
+<div class="testimonialimg"><img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+<h4>Sidney W. Yarber</h4>
 
-                                            <div class="staff-content">
-                                                <h3 class="title">Jesica Matt</h3>
-                                                <span class="post">Art Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher3.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<h5>Manager</h5>
 
-                                            <div class="staff-content">
-                                                <h3 class="title">Janaton Doe</h3>
-                                                <span class="post">Math Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img alt=""
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher2.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<ul class="ratings">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+<!--./testi_description--></div>
 
-                                            <div class="staff-content">
-                                                <h3>Stella Roffin</h3>
-                                                <span class="post">Drawing Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher1-1556236800.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<div class="col-md-8">
+<div class="testi_description">
+<p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+</div>
+</div>
+</div>
+</div>
+<!--./testimonial--></div>
+<!--./testimonial-carousel--></div>
+<!--./container--></section>
+<!-- Reviews End --></div>
+<!-- Main-Contet end -->
 
-                                            <div class="staff-content">
-                                                <h3>Princy Flora</h3>
-                                                <span class="post">English Tutor</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher2-1556236800.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<footer class="rs-footer style7" id="rs-footer">
+<div class="footer-top">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+<h4 class="widget-title">Explore</h4>
 
-                                            <div class="staff-content">
-                                                <h3 class="title">Jesica Matt</h3>
-                                                <span class="post">Art Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher3.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<ul class="site-map">
+<li><a href="#">eLearning School</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="#">Become A Teacher</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</div>
 
-                                            <div class="staff-content">
-                                                <h3 class="title">Janaton Doe</h3>
-                                                <span class="post">Math Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img alt=""
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher2.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+<h4 class="widget-title">Categories</h4>
 
-                                            <div class="staff-content">
-                                                <h3>Stella Roffin</h3>
-                                                <span class="post">Drawing Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher1-1556236800.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<ul class="site-map">
+<li><a href="#">All Courses</a></li>
+<li><a href="#">Web Development</a></li>
+<li><a href="#">Genarel Education</a></li>
+<li><a href="#">Digital Marketing</a></li>
+<li><a href="#">Web Design</a></li>
+</ul>
+</div>
 
-                                            <div class="staff-content">
-                                                <h3>Princy Flora</h3>
-                                                <span class="post">English Tutor</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher2-1556236800.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+<h4 class="widget-title">Resources</h4>
 
-                                            <div class="staff-content">
-                                                <h3 class="title">Jesica Matt</h3>
-                                                <span class="post">Art Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 325px;">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="staffteam">
-                                            <div class="staffteamimg"><img
-                                                    src="https://demo.smart-school.in/uploads/gallery/media/teacher3.jpg">
-                                                <ul class="social-links">
-                                                    <li>Facebook</li>
-                                                    <li>Twitter</li>
-                                                    <li>Linkedin</li>
-                                                    <li>Google Plus</li>
-                                                </ul>
-                                            </div>
+<ul class="site-map">
+<li><a href="#">Become A Teacher</a></li>
+<li><a href="#">Instructor/Student Profile</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="#">Checkout</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+</ul>
+</div>
 
-                                            <div class="staff-content">
-                                                <h3 class="title">Janaton Doe</h3>
-                                                <span class="post">Math Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-nav disabled">
-                            <div class="owl-prev"><i class="fa fa-angle-left"></i></div>
-                            <div class="owl-next"><i class="fa fa-angle-right"></i></div>
-                        </div>
-                        <div class="owl-dots disabled">
-                            <div class="owl-dot active"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-                <!--./staff-->
-            </div>
-            <!--./teamstaff-->
-        </div>
-        <!--./row-->
-    </div>
-    <!--./container-->
-</section>
- <!-- Reviews  Start -->
- <section class="spaceb40 spacet40 testimonial_bg fullwidth text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-12 col-md-offset-2 text-center">
-                <div class="sub-title primary text-white">Student Reviews</div>
-                <h2 class="title mb-0">What Our Students Say</h2>
-                <div class="divider">&nbsp;</div>
-            </div>
-            <!--./col-md-8-->
-            <div class="owl-carousel testimonial-carousel">
-                <div class="col-md-12 col-sm-12">
-                    <div class="testimonial">
-                        <div class="testimonialimg">
-                            <img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
-                            <h4>Sidney W. Yarber</h4>
-                            <h5>Manager</h5>
-                        </div>
-                        <div class="testi_description">
-                            <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
-                                ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
-                        </div>
-                        <!--./testi_description-->
-                    </div>
-                    <!--./testimonial-->
-                </div>
-                <!--./col-md-12-->
-                <div class="col-md-12 col-sm-12">
-                    <div class="testimonial">
-                        <div class="testimonialimg">
-                            <img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
-                            <h4>Sidney W. Yarber</h4>
-                            <h5>Manager</h5>
-                        </div>
-                        <div class="testi_description">
-                            <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
-                                ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
-                        </div>
-                        <!--./testi_description-->
-                    </div>
-                    <!--./testimonial-->
-                </div>
-                <!--./col-md-12-->
-                <div class="col-md-12 col-sm-12">
-                    <div class="testimonial">
-                        <div class="testimonialimg">
-                            <img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
-                            <h4>Sidney W. Yarber</h4>
-                            <h5>Manager</h5>
-                        </div>
-                        <div class="testi_description">
-                            <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
-                                ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
-                        </div>
-                        <!--./testi_description-->
-                    </div>
-                    <!--./testimonial-->
-                </div>
-                <!--./col-md-12-->
-                <div class="col-md-12 col-sm-12">
-                    <div class="testimonial">
-                        <div class="testimonialimg">
-                            <img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
-                            <h4>Sidney W. Yarber</h4>
-                            <h5>Manager</h5>
-                        </div>
-                        <div class="testi_description">
-                            <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
-                                ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
-                        </div>
-                        <!--./testi_description-->
-                    </div>
-                    <!--./testimonial-->
-                </div>
-                <!--./col-md-12-->
-            </div>
-            <!--./testimonial-carousel-->
-        </div>
-        <!--./row-->
-    </div>
-    <!--./container-->
-</section>
+<div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
+<h4 class="widget-title">Address</h4>
 
-<!-- Reviews End -->
+<ul class="address-widget">
+<li><i aria-hidden="true" class="fa fa-map-marker"></i>
+
+<div class="desc">503 Old Buffalo Street Northwest #205 New York-3087</div>
+</li>
+<li><i aria-hidden="true" class="fa fa-phone"></i>
+<div class="desc"><a href="tel:(123)-456-7890">(123)-456-7890</a> , <a href="tel:(123)-456-7890">(123)-456-7890</a></div>
+</li>
+<li><i aria-hidden="true" class="fa fa-envelope"></i>
+<div class="desc"><a href="mailto:infoname@gmail.com">infoname@gmail.com</a> , <a href="#">www.yourname.com</a></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom">
+<div class="container">
+<div class="main-part">
+<div class="row y-middle">
+<div class="col-lg-4 md-mb-20">
+<div class="footer-logo md-text-center"><a href="index.html"><img alt="" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733045466-906008478674c2cdab4028!Mindshine.png?1733049353" /></a></div>
+</div>
+
+<div class="col-lg-4 md-mb-20">
+<div class="copyright text-center md-text-start">
+<p>© 2024 All Rights Reserved. Developed By <a href="http://rstheme.com/">Takamul Education</a></p>
+</div>
+</div>
+
+<div class="col-lg-4 text-end md-text-start">
+<ul class="footer-social">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+const tiltElement = document.querySelector('.js-tilt');
+
+tiltElement.addEventListener('mousemove', (e) => {
+    const rect = tiltElement.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * 15;
+    const rotateY = ((x - centerX) / centerX) * -15;
+
+    tiltElement.querySelector('img').style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+});
+
+tiltElement.addEventListener('mouseleave', () => {
+    tiltElement.querySelector('img').style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg)';
+});
+
+function animateCounter(element, start, end, duration) {
+    let startTime = null;
+
+    const step = (currentTime) => {
+        if (!startTime) startTime = currentTime;
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        const currentValue = Math.floor(progress * (end - start) + start);
+        element.textContent = currentValue.toLocaleString();
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        }
+    };
+
+    requestAnimationFrame(step);
+}
+
+function startCounters() {
+    const counters = document.querySelectorAll('.rs-count');
+    counters.forEach((counter) => {
+        const endValue = parseInt(counter.textContent.replace(/,/g, ''), 10);
+        animateCounter(counter, 0, endValue, 2000);
+    });
+}
+
+
+const counterSection = document.querySelector('.rs-counter');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            startCounters();
+        }
+    });
+}, { threshold: 0.5 });
+
+observer.observe(counterSection);
+</script>

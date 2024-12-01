@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takamul Education Plateform</title>
     <style type="text/css">
+        @media screen and (max-width:1200px) {
+            .testi_description p {
+                padding-top: 60px;
+            }
+
+            .main-part {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        .owl-carousel .owl-dot {
+            background-color: #ddd;
+            width: 30px;
+            height: 10px;
+            display: inline-block;
+            margin: 0 6px;
+            padding: 3px 0;
+            border-radius: 30px;
+        }
+
+        /* Media Query End */
+        a {
+            color: #21a7d0;
+            transition: all 0.3s ease;
+            text-decoration: none !important;
+            outline: none !important;
+        }
+
+        ul {
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+        }
+
         /* Header */
         div#bootstrap-touch-slider {
             display: none;
@@ -652,10 +688,11 @@
             text-align: justify;
             border: none;
             margin-right: 0;
+            padding: 19px 4px;
         }
 
         .testimonialimg h4 {
-            font-size: 20px;
+            font-size: 15px;
             color: black;
         }
 
@@ -668,19 +705,23 @@
             font-style: italic;
             color: grey;
         }
+
         ul.ratings {
             margin: 0;
             padding: 0;
         }
+
         .ratings li {
             display: inline;
         }
-        .ratings li i{
+
+        .ratings li i {
             color: #fcb903;
         }
 
         /* Footer */
         footer {
+            display: none;
             background: url(../images/2.jpg);
             clear: both;
             padding-top: 20px;
@@ -690,11 +731,141 @@
             left: calc(-50vw + 50%);
             width: 100vw;
         }
+
+        footer:after {
+            position: absolute;
+            content: "";
+            background: none;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            z-index: -1;
+            top: 0;
+        }
+
+        .rs-footer {
+            display: block;
+            background-image: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1733044696-1718199326674c29d816618!footer-bg.png?1733045467);
+            background-color: #273c66;
+            background-size: cover;
+        }
+
+        .rs-footer.style7 .footer-top {
+            padding: 100px 0 93px;
+        }
+
+        .rs-footer .footer-top .widget-title {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        .rs-footer .footer-top .address-widget li .desc {
+            margin-bottom: 13px;
+            padding-left: 35px;
+            color: #ffffff;
+        }
+
+        .rs-footer .footer-top .address-widget li i {
+            position: absolute;
+        }
+
+        .rs-footer.style7 .footer-top .address-widget li i:before {
+            position: absolute;
+            color: #21a7d0 !important;
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        .rs-footer .footer-top .address-widget li .desc a {
+            color: #ffffff;
+        }
+
+        .rs-footer .footer-top .site-map li {
+            padding-left: 15px;
+            position: relative;
+            margin-bottom: 11px;
+        }
+
+        .rs-footer .footer-top .site-map li a {
+            color: #e8e8e8;
+        }
+
+        .rs-footer .footer-top .site-map li:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background: #21a7d0;
+        }
+
+        .rs-footer .footer-bottom {
+            padding: 40px 0;
+            background: transparent;
+            position: relative;
+        }
+
+        .rs-footer .footer-bottom:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 100%;
+            max-width: 1240px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .rs-footer .footer-bottom .footer-logo a {
+            display: inline-block;
+        }
+
+        .rs-footer .footer-bottom .footer-logo a img {
+            max-width: 100px;
+        }
+
+        .rs-footer .footer-bottom .copyright p {
+            margin-bottom: 0;
+            color: #f3f8f9;
+        }
+
+        .rs-footer .footer-bottom .copyright a {
+            color: #21a7d0;
+        }
+
+        .rs-footer .footer-bottom .footer-social li {
+            display: inline;
+            margin-right: 5px;
+        }
+
+        .rs-footer .footer-bottom .footer-social li a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 100%;
+            background: #21a7d0;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .copyright.text-center.md-text-start,
+        ul.footer-social {
+            padding-top: 30px;
+        }
     </style>
+
 </head>
+
 <body>
-    <!-- Main content Start -->
-    <!-- Banner Section Start -->
+    <!-- Main content Start --><!-- Banner Section Start -->
     <div class="main-content">
         <div class="rs-banner style7" id="rs-banner">
             <div class="container">
@@ -732,8 +903,7 @@
                     src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1732798241-12560113096748672180882!banner-1.png?1732798263" />
             </div>
         </div>
-        <!-- Banner Section End -->
-         <!-- Services Section Start -->
+        <!-- Banner Section End --><!-- Services Section Start -->
 
         <div class="rs-services style7 pt-100 md-pt-70">
             <div class="container">
@@ -1099,34 +1269,7 @@
                                     <h4>Sidney W. Yarber</h4>
 
                                     <h5>Manager</h5>
-                                    <ul class="ratings">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                                <!--./testi_description-->
-                            </div>
 
-                            <div class="col-md-8">
-                                <div class="testi_description">
-                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
-                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--./testimonial-->
-
-                    <div class="testimonial">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="testimonialimg">
-                                    <img src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
-                                    <h4>Sidney W. Yarber</h4>
-                                    <h5>Manager</h5>
                                     <ul class="ratings">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -1156,6 +1299,7 @@
                                     <h4>Sidney W. Yarber</h4>
 
                                     <h5>Manager</h5>
+
                                     <ul class="ratings">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -1176,6 +1320,7 @@
                         </div>
                     </div>
                     <!--./testimonial-->
+
                     <div class="testimonial">
                         <div class="row">
                             <div class="col-md-4">
@@ -1184,6 +1329,37 @@
                                     <h4>Sidney W. Yarber</h4>
 
                                     <h5>Manager</h5>
+
+                                    <ul class="ratings">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!--./testi_description-->
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="testi_description">
+                                    <p>Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem
+                                        ut malesuada. Phasellus dictum est sed libero posuere dignissim.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./testimonial-->
+
+                    <div class="testimonial">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="testimonialimg"><img
+                                        src="https://demo.smart-school.in/uploads/gallery/media/testim-img2.jpg" />
+                                    <h4>Sidney W. Yarber</h4>
+
+                                    <h5>Manager</h5>
+
                                     <ul class="ratings">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -1210,9 +1386,102 @@
             <!--./container-->
         </section>
         <!-- Reviews End -->
-         <!-- footer -->
-          <!-- Footer End -->
-    </div> <!-- Main-Contet end -->
+    </div>
+    <!-- Main-Contet end -->
+
+    <footer class="rs-footer style7" id="rs-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <h4 class="widget-title">Explore</h4>
+
+                        <ul class="site-map">
+                            <li><a href="#">eLearning School</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Become A Teacher</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <h4 class="widget-title">Categories</h4>
+
+                        <ul class="site-map">
+                            <li><a href="#">All Courses</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Genarel Education</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Web Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <h4 class="widget-title">Resources</h4>
+
+                        <ul class="site-map">
+                            <li><a href="#">Become A Teacher</a></li>
+                            <li><a href="#">Instructor/Student Profile</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
+                        <h4 class="widget-title">Address</h4>
+
+                        <ul class="address-widget">
+                            <li><i aria-hidden="true" class="fa fa-map-marker"></i>
+
+                                <div class="desc">503 Old Buffalo Street Northwest #205 New York-3087</div>
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-phone"></i>
+                                <div class="desc"><a href="tel:(123)-456-7890">(123)-456-7890</a> , <a
+                                        href="tel:(123)-456-7890">(123)-456-7890</a></div>
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-envelope"></i>
+                                <div class="desc"><a href="mailto:infoname@gmail.com">infoname@gmail.com</a> , <a
+                                        href="#">www.yourname.com</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="main-part">
+                    <div class="row y-middle">
+                        <div class="col-lg-4 md-mb-20">
+                            <div class="footer-logo md-text-center"><a href="index.html"><img alt=""
+                                        src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733045466-906008478674c2cdab4028!Mindshine.png?1733049353" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 md-mb-20">
+                            <div class="copyright text-center md-text-start">
+                                <p>© 2024 All Rights Reserved. Developed By <a href="http://rstheme.com/">Takamul
+                                        Education</a></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-end md-text-start">
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
         const tiltElement = document.querySelector('.js-tilt');
 
