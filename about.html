@@ -1,7 +1,200 @@
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/font@4.2.0/css/font-awesome.css">
-</head>
 <style>
+/* Media Query Start */
+@media only screen and (max-width: 1366px) {
+  .container {
+      max-width: 1170px;
+      width: 100%;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .rs-breadcrumbs .breadcrumbs-img img {
+      min-height: 350px;
+  }
+  .md-pb-70 {
+        padding-bottom: 70px;
+  }
+  .container {
+        max-width: 960px;
+  }
+  .sec-title .title {
+    font-size: 35px;
+  }
+  .rs-testimonial.style2 .testi-wrap .img-part {
+    max-width: 200px;
+    margin-right: 50px;
+  }
+  .rs-testimonial.style2 .testi-wrap .content-part {
+    display: block;
+    padding-right: 15px;
+  }
+  .rs-testimonial.style2 .testi-wrap .content-part .info {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50% !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+      max-width: 720px;
+  }
+  .md-mb-30 {
+    margin-bottom: 30px;
+  }
+  .md-mb-15 {
+    margin-bottom: 15px;
+  }
+  .md-pl-15 {
+    padding-left: 15px;
+  }
+  .md-pr-15 {
+    padding-right: 15px;
+  }
+  .md-pb-70 {
+    padding-bottom: 70px;
+  }
+  .md-pt-70 {
+    padding-top: 70px;
+  }
+  .md-pl-15 {
+    padding-left: 15px;
+  }
+  .md-pb-50 {
+    padding-bottom: 50px !important;
+  }
+  .md-pt-50 {
+    padding-top: 50px;
+  }
+  .md-mb-20 {
+    margin-bottom: 20px !important;
+  }
+  .md-mb-30 {
+    margin-bottom: 30px;
+  }
+  .md-ml-0 {
+    margin-left: 0;
+  }
+  .md-mb-50 {
+    margin-bottom: 50px;
+  }
+  .md-mb-20 {
+    margin-bottom: 20px;
+  }
+  .md-pb-0 {
+    padding-bottom: 0;
+  }
+  .sm-mb-30 {
+    margin-bottom: 30px !important;
+  }
+  .order-last {
+    order: unset !important;
+  }
+  .sec-title .title {
+    font-size: 30px;
+  }
+  .rs-cta.style2 .partition-bg-wrap.inner-page:after, .rs-cta.style2 .partition-bg-wrap.inner-page:before {
+    max-height: 300px;
+  }
+  .rs-cta.style2 .partition-bg-wrap:before {
+    width: 100% !important;
+    max-height: 300px;
+    left: unset;
+    bottom: unset;
+    top: 0;
+  }
+  .rs-cta.style2 .partition-bg-wrap:after {
+    width: 100% !important;
+    right: unset !important;
+    top: unset !important;
+  }
+  .rs-about.style1 .histort-part {
+    position: unset;
+    transform: unset;
+    margin-top: 30px;
+  }
+  .rs-testimonial.style2 .donation-part {
+    max-width: 600px;
+  }
+  .rs-testimonial.style2 .testi-wrap {
+    padding: 30px 25px;
+  }
+  .rs-newsletter.style1 .newsletter-wrap {
+    padding: 40px 30px !important;
+  }
+  .rs-newsletter.style1 .newsletter-wrap .content-part .sec-title {
+    display: block !important;
+  }
+  .rs-footer.home9-style .footer-top {
+    padding: 190px 0 60px !important;
+  }
+  .md-text-start {
+    text-align: left !important;
+  }
+  .rs-footer.home9-style.main-home .footer-bottom .copy-right-menu li:first-child {
+    padding-left: 0;
+  }
+  .rs-footer.home9-style .footer-top .recent-post .post-img {
+    width: 100px;
+  }
+  footer#rs-footer .row{
+    display: block !important;
+  }
+  .rs-footer.home9-style .footer-top .widget-title{
+    margin-bottom: 19px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .sec-title .sub-title {
+    font-size: 16px;
+  }
+  .sec-title .title {
+    font-size: 30px;
+  }
+  .sm-mb-30 {
+    margin-bottom: 30px !important;
+  }
+  .sm-mb-0 {
+    margin-bottom: 0 !important;
+  }
+  .rs-testimonial.style2 .testi-wrap {
+    padding: 30px 25px;
+  }
+  .sm-pb-70 {
+    padding-bottom: 70px;
+  }
+  .rs-newsletter.style1 .newsletter-wrap .newsletter-form {
+    max-width: 500px;
+  }
+  .rs-footer.home9-style .footer-top {
+    padding: 80px 0px !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .rs-newsletter.style1 .newsletter-wrap {
+    padding: 30px;
+  }
+  .rs-testimonial.style2 .testi-wrap .content-part {
+    padding: 25px;
+    padding-left: 40px;
+  }
+  .rs-testimonial.style2 .testi-wrap .img-part {
+    float: unset !important;
+    width: auto !important;
+    margin-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 424px){
+  .md-pb-50 {
+    padding-bottom: 13px !important;
+  }
+}
+  /*  Media Query End  */
 /* Bootstrap */
 .navborder .row {
     display: block;
@@ -16,7 +209,7 @@
     align-items: center !important;
 }
 .order-last {
-    order: 6 !important;
+    order: 6 ;
 }
 /* End Bootatrap */
 /* General */
@@ -251,6 +444,11 @@ h4 {
   border: none;
   display: block;
 }
+ul.nav.nav-tabs.histort-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .rs-about .histort-part .single-history {
   display: block;
   margin-bottom: 30px;
@@ -277,9 +475,19 @@ h4 {
   line-height: 1;
   color: #ffffff;
 }
-.rs-about .histort-part .single-history a:hover,
-.rs-about .histort-part .single-history a.active {
+.tab-pane .sec-title h2 {
+  margin-bottom: 20px;
+}
+.rs-about .histort-part .single-history a:hover {
   background: #ff5421;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #ffffff !important;
+    background: #ff5421 !important;
+    border: none !important;
+}
+.tab-content .active > div {
+  display: block !important;
 }
 .rs-about .histort-part .last-item {
   margin-bottom: 0;
@@ -1203,6 +1411,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+.rs-footer ul.address-widget {
+    padding-top: 10px;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
 /* Footer End */
 /* -------------------------------------------------------------- */
 </style>
@@ -1314,63 +1528,68 @@ img {
     </div>
 <!-- Counter Section End -->
 <!-- About Section Start -->
-    <div class="rs-about style1 pt-100 pb-100 md-pt-70 md-pb-70">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 padding-0 md-pl-15 md-pr-15 md-mb-30">
-                    <div class="img-part">
-                        <img class="" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733226362-1098917327674eef7ad4d78!history.png?1733226363" alt="About Image">
+<div class="rs-about style1 pt-100 pb-100">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="img-part">
+                  <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733226362-1098917327674eef7ad4d78!history.png?1733226363" alt="About Image" class="img-responsive">
+              </div>
+              <ul class="nav nav-tabs histort-part" role="tablist">
+                  <li class="single-history" >
+                      <a href="#about-history" data-toggle="tab" role="tab" aria-controls="about-history" aria-selected="true">
+                        <span class="icon-part"><i class="glyphicon glyphicon-book"></i></span>
+                          History
+                      </a>
+                  </li>
+                  <li class="single-history">
+                      <a href="#about-mission" data-toggle="tab" role="tab" aria-controls="about-mission" aria-selected="false">
+                          <span class="icon-part"><i class="glyphicon glyphicon-star"></i></span>
+                          Mission & Vision
+                      </a>
+                  </li>
+                  <li class="single-history">
+                      <a href="#about-admin" data-toggle="tab" role="tab" aria-controls="about-admin" aria-selected="false">
+                          <span class="icon-part"><i class="glyphicon glyphicon-user"></i></span>
+                          Administration
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+              <div class="tab-content">
+                  <div class="tab-pane fade in active" id="about-history" role="tabpanel">
+                    <div class="sec-title mb-25">
+                      <h2 class="title">Educavo History</h2>
+                      <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
                     </div>
-                    <ul class="nav nav-tabs histort-part flex-column" id="myTab" role="tablist">
-                        <li class="nav-item tab-btns single-history" role="presentation">
-                            <a class="nav-link tab-btn active" href="#" id="about-history-tab" data-bs-toggle="tab" data-bs-target="#about-history" role="tab" aria-controls="about-history" aria-selected="true"><span class="icon-part"><i class="flaticon-banknote"></i></span>History</a>
-                        </li>
-                        <li class="nav-item tab-btns single-history" role="presentation">
-                            <a class="nav-link tab-btn" href="#" id="about-mission-tab" data-bs-toggle="tab" data-bs-target="#about-mission" role="tab" aria-controls="about-mission" aria-selected="false"><span class="icon-part"><i class="flaticon-flower"></i></span>Mission & Vission</a>
-                        </li>
-                        <li class="nav-item tab-btns single-history last-item" role="presentation">
-                            <a class="nav-link tab-btn" href="#" id="about-admin-tab" data-bs-toggle="tab" data-bs-target="#about-admin" role="tab" aria-controls="about-admin" aria-selected="false"><span class="icon-part"><i class="flaticon-analysis"></i></span>Administration</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="tab-content tabs-content" id="myTabContent">
-                        <div class="tab-pane tab fade show active" id="about-history" role="tabpanel" aria-labelledby="about-history-tab">
-                            <div class="sec-title mb-25">
-                                <h2 class="title">Educavo History</h2>
-                                <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
-                            </div>
-                            <div class="tab-img">
-                                <img class="" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733226282-847290047674eef2ab11d9!tab1.jpg?1733226283" alt="Tab Image">
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="about-mission" role="tabpanel" aria-labelledby="about-mission-tab">
-                            <div class="sec-title mb-25">
-                                <h2 class="title">Educavo Mission</h2>
-                                <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
-                            </div>
-                            <div class="tab-img">
-                                <img class="" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733226282-1947236710674eef2ab82cb!tab2.jpg?1733226283" alt="Tab Image">
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="about-admin" role="tabpanel" aria-labelledby="about-admin-tab">
-                            <div class="sec-title mb-25">
-                                <h2 class="title">Educavo Administration</h2>
-                                <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
-                            </div>
-                            <div class="tab-img">
-                                <img class="" src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733226282-1506468522674eef2abe792!tab3.jpg?1733226283" alt="Tab Image">
-                            </div>
-                        </div>
+                      <div class="tab-img">
+                          <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733226282-847290047674eef2ab11d9!tab1.jpg?1733226283" alt="Tab Image" class="img-responsive">
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="about-mission" role="tabpanel">
+                    <div class="sec-title mb-25">
+                      <h2 class="title">Educavo Mission</h2>
+                      <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
                     </div>
-                </div>
-            </div>
-            <!-- Intro Info Tabs-->
-            <div class="intro-info-tabs">
-                
-            </div>
-        </div>
-    </div>
+                      <div class="tab-img">
+                          <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733226282-1947236710674eef2ab82cb!tab2.jpg?1733226283" alt="Tab Image" class="img-responsive">
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="about-admin" role="tabpanel">
+                    <div class="sec-title mb-25">
+                      <h2 class="title">Educavo Administration</h2>
+                      <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
+                    </div>
+                      <div class="tab-img">
+                          <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733226282-1506468522674eef2abe792!tab3.jpg?1733226283" alt="Tab Image" class="img-responsive">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <!-- About Section End -->
 <!-- Team Section Start -->
     <div id="rs-team" class="rs-team style1 orange-color pt-94 pb-100 md-pt-64 md-pb-70 gray-bg">
@@ -1522,8 +1741,8 @@ img {
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
-                    <div class="footer-logo mb-30">
-                        <a href="index.html"><img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733045466-906008478674c2cdab4028!Mindshine.png?1733240827" alt=""></a>
+                    <div class="footer-logo mb-15">
+                        <a href="index.html"><img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733413631-722431536751caff3ef68!Mindshine.png?1733413631" alt=""></a>
                     </div>
                       <div class="textwidget white-color pr-60 md-pr-15"><p>We denounce with righteous indi gnation and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail weakness.</p>
                       </div>
@@ -1652,25 +1871,6 @@ $(document).ready(function() {
             },
             1000: {
                 items: 3
-            }
-        }
-    });
-    $(".rs-partner .owl-carousel").owlCarousel({
-        items: 5,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 5
             }
         }
     });
