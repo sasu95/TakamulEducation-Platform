@@ -1,0 +1,643 @@
+<style>
+/* General */
+body{
+    color: #505050;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.mb-35 {
+    margin-bottom: 35px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.mb-90 {
+    margin-bottom: 90px;
+}
+.padding-0 {
+    padding: 0;
+}
+.pr-70 {
+    padding-right: 70px;
+}
+.mb-17 {
+    margin-bottom: 17px;
+}
+.pl-62 {
+    padding-left: 62px;
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+.pt-134 {
+    padding-top: 134px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-22 {
+    margin-bottom: 22px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-38 {
+    margin-bottom: 38px;
+}
+.pt-94 {
+    padding-top: 94px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb--90 {
+    margin-bottom: -90px;
+}
+.pr-60 {
+    padding-right: 60px;
+}
+.spaceb50 {
+    padding-bottom: 0;
+}
+ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.main-content {
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+}
+input:focus {
+    outline: none;
+}
+.img-part img {
+    max-width: 100%;
+}
+.sec-title{
+    border-bottom: none !important;
+}
+.sec-title h2 {
+    color: black;
+}
+.sec-title:after{
+    background: none !important;
+}
+.sec-title .sub-title.orange {
+    color: #ff5421;
+}
+.sec-title .sub-title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.bold-text {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.readon2.orange {
+    background: #ff5421;
+}
+.readon2 {
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    background: #21a7d0;
+    position: relative;
+    overflow: hidden;
+}
+.readon.orange-btn {
+    color: #ffffff;
+    background: #ff5421;
+    border-color: #ff5421;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    padding: 12px 35px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* General End*/
+/* Error Section CSS */
+.rs-page-error {
+  padding: 250px 0;
+}
+.rs-page-error .error-text {
+  color: #111111;
+  text-align: center;
+}
+.rs-page-error .error-text .error-code {
+  font-size: 100px;
+  color: #111111;
+  position: relative;
+  padding-bottom: 20px;
+}
+.rs-page-error .error-text .error-code:after {
+  position: absolute;
+  content: '';
+  background: #eee;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+}
+.rs-page-error .error-text h3.error-message {
+  color: #111111;
+  padding: 20px;
+}
+.rs-page-error .error-text form {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.rs-page-error .error-text form input {
+  border: 1px solid #ddd;
+  color: #444444;
+  padding: 15px 17px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 19px;
+}
+.rs-page-error .error-text form button {
+  background: transparent;
+  border: medium none;
+  color: #666666;
+  padding: 11px 16px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  z-index: 10;
+  font-size: 20px;
+  outline: none;
+  border-radius: 25px;
+}
+/* Footer Start */
+footer {
+    display: none;
+}
+.rs-footer{
+    display: block;
+}
+footer:after {
+    position: absolute;
+    content: "";
+    background: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    top: 0;
+}
+footer#rs-footer .row {
+    align-items: flex-start;
+}
+.rs-footer.home9-style .footer-top {
+  padding: 166px 0 93px;
+}
+.rs-footer.home9-style .footer-top .widget-title {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  position: relative;
+}
+.rs-footer.home9-style .footer-top .widget-title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 40px;
+  background: #f4bf00;
+}
+.rs-footer.home9-style .footer-top .site-map li {
+  padding-left: 15px;
+  position: relative;
+  margin-bottom: 11px;
+}
+.rs-footer.home9-style .footer-top .site-map li a {
+  color: #e8e8e8;
+}
+.rs-footer.home9-style .footer-top .site-map li a:hover {
+  color: #f4bf00;
+}
+.rs-footer.home9-style .footer-top .site-map li:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #f4bf00;
+}
+.rs-footer.home9-style .footer-top .site-map li:last-child {
+  margin-bottom: 0;
+}
+.rs-footer.home9-style .footer-top .address-widget li {
+  position: relative;
+  margin-bottom: 16px;
+}
+.rs-footer.home9-style .footer-top .address-widget li i {
+  position: absolute;
+}
+.rs-footer.home9-style .footer-top .address-widget li i:before {
+  color: #f4bf00;
+}
+.rs-footer.home9-style .footer-top .address-widget li .desc {
+  padding-left: 35px;
+  color: #ffffff;
+}
+.rs-footer.home9-style .footer-top .address-widget li .desc a {
+  color: #ffffff;
+}
+.rs-footer.home9-style .footer-top .address-widget li .desc a:hover {
+  color: #f4bf00;
+}
+.rs-footer.home9-style .footer-top .address-widget li:last-child {
+  margin-bottom: 0;
+}
+.rs-footer.home9-style .footer-top.no-gap {
+  padding-top: 93px;
+}
+.rs-footer.home9-style .footer-top .recent-post {
+  display: flex;
+}
+.rs-footer.home9-style .footer-top .recent-post .post-img {
+  width: 130px;
+  float: left;
+  padding-right: 15px;
+}
+.rs-footer.home9-style .footer-top .recent-post .post-img img {
+  border-radius: 4px;
+}
+.rs-footer.home9-style .footer-top .recent-post .post-item .post-desc a {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+.rs-footer.home9-style .footer-top .recent-post .post-item .post-desc a:hover {
+  color: #f4bf00;
+}
+.rs-footer.home9-style .footer-top .recent-post .post-item .post-date {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.rs-footer.home9-style .footer-top .recent-post .post-item .post-date i {
+  font-size: 13px;
+  color: #f4bf00;
+  padding-right: 5px;
+}
+.rs-footer.home9-style .footer-bottom {
+  padding: 40px 0;
+  background: transparent;
+  position: relative;
+}
+.rs-footer.home9-style .footer-bottom .copyright p {
+  margin-bottom: 0;
+  color: #f3f8f9;
+}
+.rs-footer.home9-style .footer-bottom .copyright a {
+  color: #f4bf00;
+}
+.rs-footer.home9-style .footer-bottom .copyright a:hover {
+  color: #21a7d0;
+}
+.rs-footer.home9-style .footer-bottom .footer-logo a {
+  display: inline-block;
+}
+.rs-footer.home9-style .footer-bottom .footer-logo a img {
+  max-width: 190px;
+}
+.rs-footer.home9-style .footer-bottom .footer-social li {
+  display: inline;
+  margin-right: 5px;
+}
+.rs-footer.home9-style .footer-bottom .footer-social li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 100%;
+  background: #f4bf00;
+  color: #ffffff;
+  text-align: center;
+}
+.rs-footer.home9-style .footer-bottom .footer-social li a:hover {
+  color: #ffffff;
+  background: #273c66;
+}
+.rs-footer.home9-style .footer-bottom .footer-social li:last-child {
+  margin: 0;
+}
+.rs-footer.home9-style .footer-bottom:before {
+  background: rgba(255, 255, 255, 0.1);
+}
+.rs-footer.home9-style.main-home {
+  background: #151515;
+  position: relative;
+  left: calc(-50vw + 50%);
+  width: 100vw;
+}
+.rs-footer.home9-style.main-home .footer-top .widget-title:before {
+  background: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-top .footer-logo a {
+  display: inline-block;
+}
+.rs-footer.home9-style.main-home .footer-top .footer-logo a img {
+  max-width:89px;
+}
+.rs-footer.home9-style.main-home .footer-top .textwidget p {
+  color: #ffffff !important;
+}
+.rs-footer.home9-style.main-home .footer-top .footer_social li {
+  display: inline-block;
+  margin-right: 6px;
+  color: #ffffff;
+}
+.rs-footer.home9-style.main-home .footer-top .footer_social li a {
+  color: #ffffff;
+  width: auto;
+  height: auto;
+  line-height: 16px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.rs-footer.home9-style.main-home .footer-top .footer_social li a:hover {
+  color: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-top .site-map li a {
+  color: #e8e8e8;
+}
+.rs-footer.home9-style.main-home .footer-top .site-map li a:hover {
+  color: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-top .site-map li:before {
+  background: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-top .address-widget li i:before {
+  color: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-top .address-widget li .desc a:hover {
+  color: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-top.no-gap {
+  padding-top: 93px;
+}
+.rs-footer.home9-style.main-home .footer-top .recent-post .post-img img {
+  border-radius: 4px;
+}
+.rs-footer.home9-style.main-home .footer-top .recent-post .post-item .post-desc a:hover {
+  color: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-top .recent-post .post-item .post-date i {
+  font-size: 13px;
+  color: #ff5421;
+  padding-right: 5px;
+}
+.rs-footer.home9-style.main-home .footer-bottom {
+  padding: 40px 0;
+  background: transparent;
+  position: relative;
+}
+.rs-footer.home9-style.main-home .footer-bottom .copyright p {
+  margin-bottom: 0;
+  color: #f3f8f9;
+}
+.rs-footer.home9-style.main-home .footer-bottom .copyright a {
+  color: #ffffff;
+}
+.rs-footer.home9-style.main-home .footer-bottom .copyright a:hover {
+  color: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-bottom .copy-right-menu li {
+  display: inline-block;
+  position: relative;
+  padding: 0px 19px 0 25px;
+}
+.rs-footer.home9-style.main-home .footer-bottom .copy-right-menu li a {
+  color: #e8e8e8;
+}
+.rs-footer.home9-style.main-home .footer-bottom .copy-right-menu li a:hover {
+  color: #ff5421;
+}
+.rs-footer.home9-style.main-home .footer-bottom .copy-right-menu li:before {
+  display: block;
+  content: "";
+  position: absolute;
+  font-size: 18px;
+  background: #ff5421;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.rs-footer.home9-style.main-home .footer-bottom .copy-right-menu li:first-child:before {
+  display: none;
+}
+.rs-footer.home9-style.main-home .footer-bottom:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 100%;
+  max-width: 1240px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.rs-footer.home9-style.main-home .footer-top .recent-post .post-img img {
+    border-radius: 4px;
+}
+ul.copy-right-menu {
+    text-align: end;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.rs-footer ul.address-widget {
+    padding-top: 10px;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
+/* Footer End */
+</style>
+<!-- Main content Start -->
+<div class="main-content">
+    <!-- Erro 404 Page Start Here -->
+    <div id="rs-page-error" class="rs-page-error">
+        <div class="error-text">
+            <h1 class="error-code">404</h1>
+            <h3 class="error-message">Page Not Found</h3>
+            <form>
+                <input type="search" placeholder="Search..." name="s" class="search-input" value="">
+                <button type="submit" value="Search"><i class="fa fa-search"></i></button>
+            </form>
+            <a class="readon orange-btn" href="index.html" title="HOME">Back to Homepage</a>
+        </div>
+    </div>
+    <!-- Erro 404 Page End Here -->
+</div> 
+<!-- Main content End -->
+<!-- Footer Start -->
+<footer id="rs-footer" class="rs-footer home9-style main-home">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
+                    <div class="footer-logo mb-15">
+                        <a href="index.html"><img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733413631-722431536751caff3ef68!Mindshine.png?1733413631" alt=""></a>
+                    </div>
+                      <div class="textwidget white-color pr-60 md-pr-15"><p>We denounce with righteous indi gnation and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail weakness.</p>
+                      </div>
+                      <ul class="footer_social">  
+                          <li> 
+                              <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                          </li>
+                          <li> 
+                              <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
+                          </li>
+
+                          <li> 
+                              <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a> 
+                          </li>
+                          <li> 
+                              <a href="# " target="_blank"><span><i class="fa fa-google-plus-square"></i></span></a> 
+                          </li>
+                          <li> 
+                              <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
+                          </li>
+                                                                   
+                      </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                    <h3 class="widget-title">Address</h3>
+                    <ul class="address-widget">
+                        <li>
+                            <i aria-hidden="true" class="fa fa-map-marker"></i>
+                            <div class="desc">
+                                Gate 4, El Khamayel , 26th July corridor,
+                                First sixth of October,
+                                Giza , Egypt
+                            </div>
+                        </li>
+                        <li>
+                            <i aria-hidden="true" class="fa fa-phone"></i>
+                            <div class="desc">
+                               <a href="tel:+201149000833">+201149000833</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i aria-hidden="true" class="fa fa-envelope"></i>
+                            <div class="desc">
+                                <a href="mailto:info@takamuleducation.com">info@takamuleducation.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 pl-50 md-pl-15 footer-widget md-mb-50">
+                    <h3 class="widget-title">Courses</h3>
+                    <ul class="site-map">
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Course Two</a></li>
+                        <li><a href="#">Single Course</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Login/Register</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <div class="recent-post mb-20">
+                        <div class="post-img">
+                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733240754-1519522415674f27b2cd540!1.jpg?1733240755" alt="">
+                        </div>
+                        <div class="post-item">
+                            <div class="post-desc">
+                                <a href="#">University while the lovely valley team work</a>
+                            </div>
+                            <span class="post-date">
+                                <i class="fa fa-calendar"></i>
+                                September 20, 2020
+                            </span>
+                        </div>
+                    </div> 
+                    <div class="recent-post mb-20 md-pb-0">
+                        <div class="post-img">
+                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733240754-209292087674f27b2ce707!2.jpg?1733240755" alt="">
+                        </div>
+                        <div class="post-item">
+                            <div class="post-desc">
+                                <a href="#">High school program starting soon 2021</a>
+                            </div>
+                            <span class="post-date">
+                               <i class="fa fa-calendar-check-o"></i>
+                                September 14, 2020
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">                    
+            <div class="row y-middle">
+                <div class="col-lg-6 md-mb-20">
+                    <div class="copyright">
+                        <p>&copy; 2024 All Rights Reserved. Developed By <a href="http://rstheme.com/">Takamul Education</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-end md-text-start">
+                    <ul class="copy-right-menu">
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
