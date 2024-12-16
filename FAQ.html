@@ -1,16 +1,76 @@
 <style>
-  @media only screen and (max-width: 1199px) {
-  .rs-breadcrumbs .breadcrumbs-img img {
-      min-height: 350px;
-  }
-  .sec-title .title {
+/* Media Query Start */
+@media only screen and (max-width: 1199px) {
+    .rs-breadcrumbs .breadcrumbs-img img {
+        min-height: 350px;
+    }
+    .sec-title .title {
     font-size: 35px;
-  }
+    }
+}
+@media only screen and (max-width: 991px){ 
+    .sec-title .title {
+    font-size: 30px;
+    }
+    .rs-newsletter.style1 .newsletter-wrap {
+    padding: 40px 30px !important;
+    }
+    .rs-newsletter.style1 .newsletter-wrap .content-part .sec-title {
+    display: block !important;
+    }
+    .rs-footer.home9-style .footer-top {
+    padding: 190px 0 60px !important;
+    }
+    .md-text-start {
+    text-align: left !important;
+    }
+    .rs-footer.home9-style.main-home .footer-bottom .copy-right-menu li:first-child {
+    padding-left: 0;
+    }
+    .rs-footer.home9-style .footer-top .recent-post .post-img {
+    width: 100px;
+    }
+    footer#rs-footer .row{
+    display: block !important;
+    }
+    .rs-footer.home9-style .footer-top .widget-title{
+    margin-bottom: 19px !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .sec-title .sub-title {
+    font-size: 16px;
+    }
+    .sec-title .title {
+    font-size: 30px;
+    }
+    .rs-newsletter.style1 .newsletter-wrap .newsletter-form {
+    max-width: 500px;
+    }
+    .rs-footer.home9-style .footer-top {
+    padding: 80px 0px !important;
+    }
+    .sm-pb-70 {
+    padding-bottom: 70px !important;
+    }
+    .sm-mb-0 {
+    margin-bottom: 0 !important;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .rs-newsletter.style1 .newsletter-wrap {
+    padding: 30px;
+    }
+}
+/* Media Query End */
+/* Bootstrap */
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 /* Theme */
-div#postList {
-padding-top: 40px;
-}
 .toparea {
       background: #ff5421 !important;
 }
@@ -35,19 +95,17 @@ padding-top: 40px;
     color: #ff5421 !important;
     border-top: 1px solid #ff5421 !important;
 }
-/* Bootstrap */
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
 /* General */
 body{
     color: #505050;
 }
 img{
     max-width: 100%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .pb-100 {
     padding-bottom: 100px;
@@ -277,7 +335,168 @@ input:focus {
     background-position: center;
     background-position: center top;
 }
-    /* NewsLatter Start */
+
+/* Faq Section */
+
+.rs-faq-part .content-part .title .text-part {
+  font-size: 20px;
+  color: #111111;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.rs-faq-part .content-part .accordion {
+  border-width: 12px;
+}
+.rs-faq-part .content-part .accordion .card {
+  margin-bottom: 15px;
+  border: none;
+}
+.rs-faq-part .content-part .accordion .card:last-child {
+  margin-bottom: 0;
+}
+.rs-faq-part .content-part .accordion .card .card-header {
+  padding: 0 !important;
+  border: none;
+}
+.rs-faq-part .content-part .accordion .card .card-header .card-link {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ffffff;
+  display: block;
+  padding: 15px 15px;
+  text-transform: capitalize;
+  background: #21a7d0;
+}
+.rs-faq-part .content-part .accordion .card .card-header .card-link.collapsed {
+  background: #f9f8ff;
+  color: #505050;
+}
+.rs-faq-part .content-part .accordion .card .card-body {
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #505050;
+  padding: 15px 14px 15px !important;
+  border: 1px solid #f9f8ff;
+}
+.rs-faq-part.style1 .main-part {
+  background: #f9f8f8;
+  padding: 60px 60px 70px;
+}
+.rs-faq-part.style1 .main-part .title .text-part {
+  font-size: 36px;
+  color: #111111;
+  line-height: 46px;
+  font-weight: 700;
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion {
+  border-width: 12px;
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion .card {
+  margin-bottom: 25px;
+  border: none;
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion .card:last-child {
+  margin-bottom: 0;
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion .card .card-header {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  border: none;
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion .card .card-header .card-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 60px;
+  height: 65px;
+  line-height: 65px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #21a7d0;
+  box-shadow: 0 0 49px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion .card .card-header .card-link:after {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f1f7";
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-weight: 400;
+  background: unset;
+  height: unset;
+  width: unset;
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion .card .card-header .card-link.collapsed {
+  background: #ffffff;
+  color: #111111;
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion .card .card-header .card-link.collapsed:after {
+  content: "\f0a2";
+}
+.rs-faq-part.style1 .main-part .faq-content .accordion .card .card-body {
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #505050;
+  padding: 15px 14px 15px !important;
+  width: 100%;
+}
+.rs-faq-part.style1 .main-part.new-style {
+  background: #f3fcf8;
+  padding: 49px 50px 70px;
+}
+.rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card:last-child {
+  margin-bottom: 0;
+}
+.rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-header .card-link {
+  background: #0c8b51;
+}
+.rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-header .card-link:after {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f107";
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-weight: 900;
+}
+.rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-header .card-link.collapsed {
+  background: #ffffff;
+  color: #111111;
+}
+.rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-header .card-link.collapsed:after {
+  content: "\f105";
+}
+.rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-body {
+  padding: 20px 14px 35px !important;
+}
+.rs-faq-part.style1 .img-part {
+  background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1734360180-109316997667603c748b7a6!1.jpg?1734360180);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 615px;
+}
+.rs-faq-part.orange-color .content-part .accordion .card .card-header .card-link,
+.rs-faq-part.orange-color .main-part .faq-content .accordion .card .card-header .card-link {
+  background: #ff5421;
+}
+.rs-faq-part.orange-color .content-part .accordion .card .card-header .card-link.collapsed,
+.rs-faq-part.orange-color .main-part .faq-content .accordion .card .card-header .card-link.collapse {
+  background: #f9f8ff;
+}
+/* NewsLatter Start */
 .rs-newsletter.style1 .newsletter-wrap {
   background: url(https://ecas2.takamulsoftware.com/uploads/gallery/media/1733240114-1390905962674f253259935!newsletter-bg.jpg?1733240114);
   background-size: cover;
@@ -655,17 +874,159 @@ img {
             <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733222068-1776196304674edeb4b7082!2.jpg?1733222069" alt="Breadcrumbs Image">
         </div>
         <div class="breadcrumbs-text white-color">
-            <h1 class="page-title">Gallery</h1>
+            <h1 class="page-title">Events</h1>
             <ul>
                 <li>
                     <a class="active" href="index.html">Takamul Education</a>
                 </li>
-                <li>Gallery</li>
+                <li>Events</li>
             </ul>
         </div>
-    </div> <!-- Breadcrumbs End -->
-</div> <!-- main-content End -->  
-<!-- <footer id="rs-footer" class="rs-footer home9-style main-home">
+    </div> <!-- Breadcrumbs End --> 
+    <div class="rs-faq-part orange-color pt-100 pb-100 md-pt-70 md-pb-70">
+        <div class="container">
+            <div class="content-part mb-50 md-mb-30">
+                <div class="title mb-40 md-mb-15">
+                    <h3 class="text-part">Kindergarten</h3>
+                </div>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card panel panel-default">
+                        <div class=" card-header panel-heading" role="tab" id="headingOne">
+                            <a class="card-link panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What do you mean by item and end product?</a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="card-body panel-body">
+                             Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" card panel panel-default">
+                         <div class="card-header panel-heading" role="tab" id="headingTwo">
+                             <a class=" card-link panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="#collapseTwo">What do you mean by item and end product?</a>
+                         </div>
+                         <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                             <div class="card-body panel-body">
+                             Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card panel panel-default">
+                         <div class="card-header panel-heading" role="tab" id="headingThree">
+                             <a class=" card-link panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">What do you mean by item and end product?</a>
+                         </div>
+                         <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                             <div class=" card-body panel-body">
+                              Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="content-part mb-50 md-mb-30">
+                <div class="title mb-40 md-mb-15">
+                    <h3 class="text-part">Primary School</h3>
+                </div>
+                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default card">
+                        <div class="panel-heading card-header" role="tab" id="headingFour">
+                            <a class="panel-title card-link" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">What do you mean by item and end product?</a>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body card-body">
+                             Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default card">
+                         <div class="panel-heading card-header" role="tab" id="headingFive">
+                             <a class="panel-title card-link" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" aria-expanded="true" aria-controls="#collapseFive">What do you mean by item and end product?</a>
+                         </div>
+                         <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+                             <div class="panel-body card-body">
+                             Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                             </div>
+                         </div>
+                     </div>
+                     <div class="panel panel-default card">
+                         <div class="panel-heading card-header" role="tab" id="headingSix">
+                             <a class="panel-title card-link" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">What do you mean by item and end product?</a>
+                         </div>
+                         <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+                             <div class="panel-body card-body">
+                              Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="content-part mb-50 md-mb-30">
+                <div class="title mb-40 md-mb-15">
+                    <h3 class="text-part">High School</h3>
+                </div>
+                <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default card">
+                        <div class="panel-heading card-header" role="tab" id="headingSeven">
+                            <a class="panel-title card-link" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">What do you mean by item and end product?</a>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body card-body">
+                             Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default card">
+                         <div class="panel-heading card-header" role="tab" id="headingEight">
+                             <a class="panel-title card-link" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseEight" aria-expanded="true" aria-controls="#collapseEight">What do you mean by item and end product?</a>
+                         </div>
+                         <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingEight">
+                             <div class="panel-body card-body">
+                             Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                             </div>
+                         </div>
+                     </div>
+                     <div class="panel panel-default card">
+                         <div class="panel-heading card-header" role="tab" id="headingNine">
+                             <a class="panel-title card-link" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">What do you mean by item and end product?</a>
+                         </div>
+                         <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingNine">
+                             <div class="panel-body card-body">
+                              Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div> <!-- End Container -->
+   </div> <!-- End Faq -->
+   <!-- Newsletter section start -->
+   <div class="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-70">
+    <div class="container">
+        <div class="newsletter-wrap">
+            <div class="row y-middle">
+                <div class="col-lg-6 col-md-12 md-mb-30">
+                <div class="content-part">
+                    <div class="sec-title">
+                        <div class="title-icon md-mb-15">
+                            <img src="https://ecas2.takamulsoftware.com/uploads/gallery/media/1733240037-1022435372674f24e58afa1!newsletter.png?1733240038" alt="images">
+                        </div>
+                        <h2 class="title mb-0 white-color">Subscribe to Newsletter</h2>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <form class="newsletter-form">
+                        <input type="email" name="email" placeholder="Enter Your Email" required="">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Newsletter section end -->
+</div> <!-- main-content End --> 
+<!-- Footer Start -->
+<footer id="rs-footer" class="rs-footer home9-style main-home">
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -782,5 +1143,5 @@ img {
             </div>
         </div>
     </div>
-</footer> -->
+</footer>
 <!-- Footer End -->
